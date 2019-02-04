@@ -13,27 +13,32 @@
       </a>
     </div>
 
+    <?php
+    $menu_name = 'bottom';
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+    $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+    ?>
+
     <div id="navbarsExample07" class="atm-bot-nav collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="<?php echo get_home_url(); ?>" title="<?php echo get_bloginfo( 'name' ); ?>">Home <span class="sr-only">(current)
-              </span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Story </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Brands </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">People </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Partner </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers </a>
-            </li>
+            <?php
+            $count = 0;
+            $submenu = false;
+            foreach( $menuitems as $item ):
+                $link = $item->url;
+                $title = $item->title;
+                // item does not have a parent so menu_item_parent equals 0 (false)
+                if ( !$item->menu_item_parent ):
+                // save this id for later comparison with sub-menu items
+                $parent_id = $item->ID;
+            ?>
+                <li class="nav-item active">
+                  <a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?> <span class="sr-only">(current)
+                  </span></a>
+                </li>
+              <?php endif; ?>
+          <?php $count++; endforeach; ?>
           </ul>
       </div>
   </div>

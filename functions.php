@@ -21,6 +21,46 @@ function my_custom_styles() {
 
 add_action( 'wp_enqueue_scripts','my_custom_styles' );
 
+function atom_setup() {
+
+/**
+Custom menus for the page
+**/
+
+register_nav_menus(
+	array(
+		'top' => __( 'Top Menu', 'atom' ),
+		'bottom' => __( 'Bottom Menu', 'atom' )
+	)
+);
+
+// Define and register starter content to showcase the theme on new sites.
+	$starter_content = array(
+		// Set up nav menus for each of the two areas registered in the theme.
+		'nav_menus' => array(
+			// Assign a menu to the "top" location.
+			'top' => array(
+				'name' => __( 'Top Menu', 'atom' ),
+				'items' => array(
+					'link_home' // Note that the core "home" page is actually a link in case a static front page is not used.
+				)
+			),
+			'bottom' => array(
+				'name' => __( 'Bottom Menu', 'atom' ),
+				'items' => array(
+					'link_home'
+				)
+			)
+		)
+	);
+
+	$starter_content = apply_filters( 'atom_starter_content', $starter_content );
+
+	add_theme_support( 'starter-content', $starter_content );
+}
+
+add_action( 'after_setup_theme', 'atom_setup' );
+
 /**
 Custom Header with full width background image
 Only if website needs to show banner image
@@ -37,20 +77,6 @@ function atom_custom_header_setup() {
 }
 
 add_action( 'after_setup_theme', 'atom_custom_header_setup' );
-
-/**
-Custom menus for the page
-**/
-function register_my_menus() {
-	register_nav_menus(
-		array(
-			'header-menu' => __( 'Header Menu' ),
-			'extra-menu' => __( 'Extra Menu' )
-		)
-	);
-}
-
-add_action( 'init', 'register_my_menus' );
 
 /**
 Custom Logo Should be of particular size
