@@ -1,0 +1,46 @@
+/* This stylesheet is used to alter the bootstrap inbuilt classes */
+
+.nav-link {
+	padding: 0 1rem;
+}
+
+nav .fixed-top {
+	top: 52px;
+}
+
+.navbar {
+	padding: 0;
+}
+
+.carousel-inner {
+	max-height: 680px;
+}
+
+.carousel-caption {
+	top: 30%;
+	bottom: 40%;
+	color: #000;
+	background-color: rgba(255,255,255,.8);
+	padding: 1.5rem;
+	width: 30%;
+}
+
+.carousel-indicators li {
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background-color: #000;
+	margin: 0 8px;
+}
+
+.carousel-indicators .active {
+	background-color: #9d0e04;
+}
+
+.dropdown-menu {
+	font-size: .8rem;
+}
+
+.nav-item:hover .dropdown-menu {
+	display: inline-block;
+}

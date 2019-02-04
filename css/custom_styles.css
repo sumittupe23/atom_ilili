@@ -1,0 +1,377 @@
+/* This style is used to add customized classes for my theme */
+
+.atm-top-bar {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	font-size: .8rem;
+	background-color: #000;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.atm-top-bar a {
+	color: #fff;
+}
+
+.atm-top-bar a:hover {
+	color: rgba(252,248,244,0.7);
+	cursor: pointer;
+}
+
+.atm-sticky {
+	background-color: #fff;
+	top: 0px !important;
+}
+
+.atm-carousel-item img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.atm-nav {
+    flex-grow: 0;
+    background: rgba(255,255,255,.8);
+    text-transform: uppercase;
+	line-height: 1;
+	font-weight: 400;
+	font-size: .8rem;
+}
+
+.atm-nav a:hover {
+	color: rgba(0,0,0,0.7);
+}
+
+.atm-btn {
+	line-height: 1;
+	padding: .5rem 1rem !important;
+	border-radius: 0;
+	transition: all .2s ease-in-out 0s;
+	font-size: .8rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	font-weight: 400;
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+}
+
+.atm-btn-brand {
+	font-family: priori-sans;
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+	border: none;
+}
+
+.atm-btn-brand:hover {
+	animation: atmbtnbrand 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+
+.atm-bot-nav {
+    flex-grow: 0;
+    text-transform: uppercase;
+	line-height: 1;
+	font-weight: 400;
+	font-size: .8rem;
+}
+
+.atm-bot-nav a:hover {
+	color: rgba(252,248,244,0.7);
+}
+
+.atm-sticky-bot-nav {
+	background-color: #000;
+	padding: .3rem 2rem;
+}
+
+.atm-bot-nav a {
+	color: #fff;
+}
+
+.atm-sticky-bot-nav .atm-icon {
+	background-color: rgba(0,0,0,1);
+	border-radius: 50%;
+}
+
+.atm-sticky-bot-nav .fb {
+	padding: .2rem .3rem .2rem .5rem;
+}
+
+.atm-sticky-bot-nav .tw {
+	padding: .2rem .15rem .2rem .45rem;
+}
+
+.atm-sticky-bot-nav .in {
+	padding: .2rem .35rem .2rem .45rem;	
+}
+
+.atm-sticky-bot-nav .atm-icon:hover {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.in:hover > .fa-instagram, .tw:hover > .fa-twitter, .fb:hover > .fa-facebook {
+	color: #000;
+}
+
+.atm-sticky-bottom {
+	bottom: 56px;
+}
+
+.atm-bottom-nav {
+	width: 100%;
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.atm-bottom-nav-inner {
+	line-height: 1.5;
+	margin: 0.5rem;
+	position: relative;
+	display: block;
+	font-size: .7rem;
+	letter-spacing: 1.5px;
+}
+
+.atm-about-section-top {
+	text-align: center;
+	padding: 4rem 10rem;
+}
+
+.atm-btn-brand-alt {
+	font-family: "priori-sans";
+	color: #333;
+	background-color: #fff;
+	border-color: #333;
+}
+
+.atm-c-tout-overlay--dimmed::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.atm-c-tout-overlay {
+    background-attachment: fixed;
+    height: 70vh !important;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    min-height: 20rem;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.atm-c-tout-overlay > div {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.atm-c-tout-overlay .container .h1 {
+    font-style: italic;
+    text-transform: none;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.atm-c-tout-overlay .container .h1 {
+    width: 60%;
+    margin: 0 auto 20px;
+}
+
+.atm-c-tout-overlay h1, .atm-c-tout-overlay .h1 {
+    color: #fff;
+}
+
+.atm-c-tout-overlay .btn {
+    margin-top: 1rem;
+}
+
+.atm-c-split {
+    margin: 6rem auto;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-repeat: repeat;
+    background-position: top left;
+    overflow: hidden;
+}
+
+.atm-c-split__col {
+    text-align: center;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    position: relative;
+    z-index: 0;
+    min-height: 68vh;
+    background-repeat: repeat;
+    background-position: top left;
+    overflow: hidden;
+}
+
+.atm-c-split__col-inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.atm-c-split__content {
+    max-width: 80%;
+    background: #fff;
+    padding: 3rem 3rem 2rem;
+    box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
+    border: 1px solid #f8f6f5;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
+    width: 50%;
+    height: 68vh;
+    display: table-cell;
+}
+
+.atm-c-split--vcenter .atm-c-split__col-inner {
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.atm-c-split--vcenter .atm-c-split__col {
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.atm-content {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.atm-content > h2 {
+    margin-bottom: 1.5rem;
+}
+
+.atm-content .atm-c-btn {
+    margin: 1rem .9375rem;
+}
+
+.atm-c-btn-brand-alt {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    font-family: "priori-sans";
+    color: #000;
+    background-color: #fff;
+    border-bottom-color: #000;
+}
+
+.atm-c-btn {
+    line-height: 1;
+    padding: 0.5rem 1rem 0.5rem !important;
+    border-radius: 0;
+    transition: all .2s ease-in-out 0s;
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+}
+
+.atm-c-split--alternate .atm-c-split__col:first-child {
+    left: 50%;
+}
+
+.atm-c-split__col--empty:last-child {
+    transform: translateX(-20%) !important;
+    z-index: -1;
+}
+
+.atm-c-split--alternate .atm-c-split__col--empty:last-child {
+    transform: translateX(20%) !important;
+    z-index: -1;
+}
+
+.atm-c-split--alternate .atm-c-split__col:last-child {
+    left: -50%;
+}
+
+.atm-c-split__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.atm-c-split .atm-c-split__image {
+    transition: all 12s;
+}
+
+.atm-c-split:hover .atm-c-split__image {
+    transform: scale(1.04);
+}
+
+.atm-c-split:hover .atm-c-split__content{
+    transform: translateY(-5px);
+}

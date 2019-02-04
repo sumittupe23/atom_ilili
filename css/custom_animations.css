@@ -1,0 +1,10 @@
+/* All custom animations are defined in this file */
+
+@keyframes atmbtnbrand {
+	8%{
+		border-radius: 20px 0;
+	}
+	100%{
+		border-radius: 20px 0;
+	}
+}
