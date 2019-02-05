@@ -5,7 +5,7 @@
 		<?php if ( !has_custom_logo() ) { ?>
 			<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/logo.png">
 		<?php } else { 
-			$custom_logo_id = get_theme_mod( 'custom-logo' );
+			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 			?>
 			<img src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>">
@@ -15,12 +15,7 @@
 	  <span class="navbar-toggler-icon"></span>
 	</button>
 
-	  <?php 
-	  // wp_nav_menu( array(
-	  // 		'container_class' => 'atm-nav',
-	  // 		'theme_location' => 'top',
-	  // 		'menu_id' => 'top-menu',
-	  // 	));
+	  <?php
 	  $menu_name = 'top';
 	  $locations = get_nav_menu_locations();
 	  $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
@@ -40,11 +35,11 @@
 		        // save this id for later comparison with sub-menu items
 		        $parent_id = $item->ID;
 		    ?>
-      		<li class="nav-item active">
-				<a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?> <span class="sr-only">(current)
-				</span></a></li>
+      		<li class="nav-item">
+				<a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?></a></li>
 				<?php endif; ?>
-			<?php $count++; endforeach; ?>
+					<!-- Nested Menus not working -->
+		<?php $count++; endforeach; ?>
       	</ul>
       	<form class="form-inline">
 			<!-- <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search"> -->

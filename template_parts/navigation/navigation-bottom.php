@@ -33,9 +33,8 @@
                 // save this id for later comparison with sub-menu items
                 $parent_id = $item->ID;
             ?>
-                <li class="nav-item active">
-                  <a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?> <span class="sr-only">(current)
-                  </span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?></a>
                 </li>
               <?php endif; ?>
           <?php $count++; endforeach; ?>
