@@ -1,6 +1,6 @@
 <!-- Navbar Bottom Copyright -->
 <section class="atm-bottom-nav">
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center pt-5">
     <div class="col-md-3">
       <div class="atm-bottom-nav-address">
         <h3>Contact </h3>
@@ -30,20 +30,20 @@
     </div>
 
     <div class="col-md-3">
-      <div class="atm-bottom-nav-address">
+      <div class="atm-bottom-nav-news">
         <h3>Newsletter & Offers </h3>
-        
+          <?php echo do_shortcode('[contact-form-7 id="8676" title="News Letter"]'); ?>
       </div>
     </div>
-
   </div>
 
+</section>
+<section class="atm-bottom-nav">
   <div class="row justify-content-md-center">
-    <div class="col-md-3">
+    <div class="col">
       <div class="atm-bottom-nav-copy">
         <span>&copy; 2019 SK Restaurants Pvt. Ltd.</span>
       </div>
     </div>
   </div>
-
 </section>

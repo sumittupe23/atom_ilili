@@ -33,3 +33,50 @@
 		</div>
 	</div>
 </section>
+
+<section class="mt-5 mb-5 container-fluid">
+	<div class="atm-updates">	
+		<div class="row justify-content-center">
+			<div class="col"><h2>Latest Updates</h2></div>
+		</div><hr>
+		<div class="mt-5 row justify-content-center">
+			<div class="col-md-4">
+				<div class="card atm-card">
+				  <div class="atm-img-top">
+				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/14068Philippe_Massoud_001.jpg" alt="Card image cap">
+				  </div>
+
+				  <div class="atm-card-body card-body">
+				  	<h3>The New York Times</h3>
+				    <span>Q and A: Philippe Massoud</span>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card atm-card">
+				  <div class="atm-img-top">
+				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/72823Single_Dish.jpg" alt="Card image cap">
+				  </div>
+
+				  <div class="atm-card-body card-body">
+				  	<h3>The New York Times</h3>
+				    <span>Q and A: Philippe Massoud</span>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card atm-card">
+				  <div class="atm-img-top">
+				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/48214Our_food.jpg" alt="Card image cap">
+				  </div>
+
+				  <div class="atm-card-body card-body">
+				  	<h3>The New York Times</h3>
+				    <span>Q and A: Philippe Massoud</span>
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>

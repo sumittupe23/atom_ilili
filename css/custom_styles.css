@@ -145,7 +145,6 @@
 	width: 100%;
 	color: #fff;
     background-color: #000;
-    padding-top: 4.5rem;
     letter-spacing: .05rem;
     word-wrap: break-word;
 }
@@ -158,7 +157,7 @@
     text-align: center;
 }
 
-.atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3 {
+.atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
     padding-bottom: 1rem;
     text-align: center;
 }
@@ -395,3 +394,80 @@
 .error-template {padding: 40px 15px;text-align: center;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
 .error-actions .btn { margin-right:10px; }
+
+div.wpcf7 { 
+background-color: #000;
+padding:10px;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+background-color: #000;
+color:#e3e3e3;
+border: 1px inline #e3e3e3;
+font-family: 'clear_sans_thinregular', Arial, sans-serif;
+font-style:italic;    
+}
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] { 
+background-color:rgba(0,0,0,0.4);
+color: #fff;
+display: inline-block;
+cursor: pointer;
+padding: .5rem 1rem;
+font-family: 'clear_sans_thinregular', Arial, sans-serif;
+text-align:center;
+text-transform:uppercase;
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="button"]:hover {
+    border: 1px outline #e3e3e3;
+    background-color: #fff;
+    color: #000;
+}
+
+.atm-updates {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.atm-updates, .row h2 {
+    text-align: center;
+}
+
+.atm-card {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+}
+
+.atm-img-top {
+    overflow: hidden;
+}
+
+.atm-img-top img {
+    max-width: 100%;
+    -moz-transition: all 15s;
+    -webkit-transition: all 15s;
+    transition: all 15s;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #222;
+}
+
+.atm-img-top:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.atm-card-body span {
+    font-size: 1rem;
+    font-weight: 300;
+}
