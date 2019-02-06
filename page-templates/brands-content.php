@@ -1,3 +1,9 @@
+<?php
+/**
+Template Name: Brands Page
+**/
+get_header();
+?>
 <section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate">
 	<div class="atm-c-split__col ">
 		<div class="atm-c-split__col-inner">
@@ -51,3 +57,4 @@
 		</div>
 	</div>
 </section>
+<?php get_footer(); ?>

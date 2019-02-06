@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
-	<?php get_template_part('/template_parts/content', get_post_format()); ?>
+	<?php 
+
+	if ( is_front_page() ) {
+		get_template_part( 'page-templates/content' );
+	}
+
+	?>
 
 <?php get_footer(); ?>

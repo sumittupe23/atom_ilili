@@ -1,54 +1,49 @@
-<nav class="navbar navbar-expand-lg">
-  <!-- Sticky bottom nav bar -->
-  <div id="sticky-bottom" class="container-fluid fixed-bottom atm-sticky-bot-nav">
-    <div class="">
-      <a class="atm-icon fb" href="#" target="_blank">
-        <span class="fa fa-facebook"></span>
-      </a>
-      <a class="atm-icon tw" href="#" target="_blank">
-        <span class="fa fa-twitter"></span>
-      </a>
-      <a class="atm-icon in" href="#" target="_blank">
-        <span class="fa fa-instagram"></span>
-      </a>
-    </div>
-
-    <?php
-    $menu_name = 'bottom';
-    $locations = get_nav_menu_locations();
-    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
-    $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
-    ?>
-
-    <div id="navbarsExample07" class="atm-bot-nav collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto">
-            <?php
-            $count = 0;
-            $submenu = false;
-            foreach( $menuitems as $item ):
-                $link = $item->url;
-                $title = $item->title;
-                // item does not have a parent so menu_item_parent equals 0 (false)
-                if ( !$item->menu_item_parent ):
-                // save this id for later comparison with sub-menu items
-                $parent_id = $item->ID;
-            ?>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?></a>
-                </li>
-              <?php endif; ?>
-          <?php $count++; endforeach; ?>
-          </ul>
+<!-- Navbar Bottom Copyright -->
+<section class="atm-bottom-nav">
+  <div class="row justify-content-md-center">
+    <div class="col-md-3">
+      <div class="atm-bottom-nav-address">
+        <h3>Contact </h3>
+        <span>C-18, Dalia Estate, Near Fun Republic,
+          Andheri Link Road, Andheri (W),
+          <br>Mumbai – 400053, India
+          <br>Email : info@skrestaurants.com
+          <br>Contact No. : +91 22 26735014/15</span>
       </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="atm-bottom-nav-social">
+        <h3>Connect </h3>
+        <div class="atm-sticky-bot-nav">
+          <a class="atm-icon fb" href="#" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a class="atm-icon tw" href="#" target="_blank">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a class="atm-icon in" href="#" target="_blank">
+            <span class="fa fa-instagram"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="atm-bottom-nav-address">
+        <h3>Newsletter & Offers </h3>
+        
+      </div>
+    </div>
+
   </div>
 
-  <!-- Navbar Bottom Copyright -->
-  <div class="atm-bottom-nav">
-    <div class="atm-bottom-nav-inner">
-      <a href="#" target="_blank">
-        © Copyright 2018 International Hospitality Investments, LLC. All rights reserved. ilili Restaurant's Logo is a registered trademark, of International Hospitality Investments, LLC.<br>
-        powered by BentoBox
-      </a>
+  <div class="row justify-content-md-center">
+    <div class="col-md-3">
+      <div class="atm-bottom-nav-copy">
+        <span>&copy; 2019 SK Restaurants Pvt. Ltd.</span>
+      </div>
     </div>
   </div>
-</nav>
+
+</section>

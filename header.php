@@ -12,6 +12,10 @@
 </head>
 <body>
 
-<?php get_template_part( '/template_parts/navigation/navigation-top' ); ?>
+<?php 
+
+	get_template_part( '/template_parts/navigation/navigation-top' ); 
+
+?>
 
 <div class="container-fluid p-0 m-0">
