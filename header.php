@@ -8,6 +8,8 @@
 
 	<title><?php echo get_bloginfo(' name '); ?></title>
 
+	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
 <body>

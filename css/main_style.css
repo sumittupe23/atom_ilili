@@ -5,8 +5,6 @@
   font-weight: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
-
 @font-face {
     font-family: 'clear_sans_thinregular';
     src: url('/fonts/ClearSans-Thin-webfont.woff') format('woff');

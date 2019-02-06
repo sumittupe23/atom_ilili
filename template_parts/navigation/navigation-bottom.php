@@ -1,16 +1,18 @@
 <!-- Navbar Bottom Copyright -->
+<?php if ( is_active_sidebar( 'atm_footer_one' ) || is_active_sidebar( 'atm_footer_three' ) ) : ?>
 <section class="atm-bottom-nav">
   <div class="row justify-content-md-center pt-5">
+    <?php if ( is_active_sidebar( 'atm_footer_one' ) ) : {
+      # code...
+    } ?>
     <div class="col-md-3">
-      <div class="atm-bottom-nav-address">
-        <h3>Contact </h3>
-        <span>C-18, Dalia Estate, Near Fun Republic,
-          Andheri Link Road, Andheri (W),
-          <br>Mumbai – 400053, India
-          <br>Email : info@skrestaurants.com
-          <br>Contact No. : +91 22 26735014/15</span>
-      </div>
+      <!-- <div class="atm-bottom-nav-address"> -->
+          <?php
+            dynamic_sidebar( 'atm_footer_one' );
+          ?>
+      <!-- </div> -->
     </div>
+    <?php endif; ?>
 
     <div class="col-md-3">
       <div class="atm-bottom-nav-social">
@@ -29,21 +31,31 @@
       </div>
     </div>
 
+    <?php if ( is_active_sidebar( 'atm_footer_three' ) ) : {
+      # code...
+    } ?>
     <div class="col-md-3">
-      <div class="atm-bottom-nav-news">
-        <h3>Newsletter & Offers </h3>
-          <?php echo do_shortcode('[contact-form-7 id="8676" title="News Letter"]'); ?>
-      </div>
+      <!-- <div class="atm-bottom-nav-news"> -->
+        <!-- <h3>Newsletter & Offers </h3> -->
+          <?php dynamic_sidebar( 'atm_footer_three' ); //echo do_shortcode('[contact-form-7 id="137" title="Newsletter"]'); ?>
+      <!-- </div> -->
     </div>
   </div>
+  <?php endif; ?>
 
 </section>
+<?php endif; ?>
+<?php if ( is_active_sidebar( 'atm_footer_two' ) ) : ?>
 <section class="atm-bottom-nav">
   <div class="row justify-content-md-center">
     <div class="col">
-      <div class="atm-bottom-nav-copy">
-        <span>&copy; 2019 SK Restaurants Pvt. Ltd.</span>
-      </div>
+      <!-- <div class="atm-bottom-nav-copy"> -->
+        <!-- <span>&copy; 2019 SK Restaurants Pvt. Ltd.</span> -->
+        <?php
+          dynamic_sidebar( 'atm_footer_two' );
+        ?>
+      <!-- </div> -->
     </div>
   </div>
 </section>
+<?php endif; ?>

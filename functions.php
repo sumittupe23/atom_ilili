@@ -53,6 +53,36 @@ register_nav_menus(
 
 add_action( 'after_setup_theme', 'atom_setup' );
 
+/**
+Activvation of widget area
+**/
+function atm_custom_widgets_init() {
+	register_sidebar( array(
+		'name' => 'Footer Area Address',
+		'id' => 'atm_footer_one',
+		'before_widget' => '<div class="atm-bottom-nav-address">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+	register_sidebar( array(
+		'name' => 'Footer Area Copyright',
+		'id' => 'atm_footer_two',
+		'before_widget' => '<div class="atm-bottom-nav-copy">',
+		'after_widget' => '</div>',
+		'before_title' => '<span>',
+		'after_title' => '</span>'
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Area Newsletter',
+		'id' => 'atm_footer_three',
+		'before_widget' => '<div class="atm-bottom-nav-news">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	) );
+}
+add_action( 'widgets_init', 'atm_custom_widgets_init' );
 
 /**
 Adding Custom CSS Files
