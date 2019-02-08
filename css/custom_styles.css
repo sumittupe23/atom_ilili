@@ -1,5 +1,7 @@
 /* This style is used to add customized classes for my theme */
 
+/* Sticky Top Bar */
+
 .atm-top-bar {
 	position: relative;
 	z-index: 10;
@@ -25,7 +27,24 @@
 .atm-sticky {
 	background-color: #fff;
 	top: 0px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
+
+#sticky {
+    transition: 0.5s;
+}
+
+#sticky .navbar-brand img:after, #sticky .navbar-brand img:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    transform: skewx(10deg);
+}
+
+/* Carousel Style */
 
 .atm-carousel-item img {
 	background-repeat: no-repeat;
@@ -71,7 +90,7 @@
 }
 
 .atm-btn-brand {
-	font-family: 'clear_sans_thinregular', Arial, sans-serif;
+	font-family: 'Cinzel', serif;
 	color: #fff;
 	background-color: #000;
 	border-color: #000;
@@ -175,11 +194,13 @@
 }
 
 .atm-btn-brand-alt {
-	font-family: 'clear_sans_thinregular', Arial, sans-serif;
+	font-family: 'Cinzel', serif;
 	color: #333;
 	background-color: #fff;
 	border-color: #333;
 }
+
+/* Brands Division Section */
 
 .atm-c-tout-overlay--dimmed::after {
     width: 100%;
@@ -195,7 +216,7 @@
 
 .atm-c-tout-overlay {
     background-attachment: fixed;
-    height: 70vh !important;
+    height: 10vh !important;
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,8 +293,8 @@
 }
 
 .atm-c-split__content {
-    max-width: 80%;
-    background: #fff;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.6);
     padding: 3rem 3rem 2rem;
     box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
     border: 1px solid #f8f6f5;
@@ -283,6 +304,11 @@
     transition-delay: 0s;
     margin-left: auto;
     margin-right: auto;
+}
+
+.atm-c-split__content p {
+    font-size: .8rem;
+    text-align: left;
 }
 
 .atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
@@ -304,8 +330,8 @@
 
 .atm-content {
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 .atm-content > h2 {
     margin-bottom: 1.5rem;
@@ -319,9 +345,8 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    font-family: 'clear_sans_thinregular', Arial, sans-serif;
+    font-family: 'Cinzel', serif;
     color: #000;
-    background-color: #fff;
     border-bottom-color: #000;
 }
 
@@ -350,7 +375,7 @@
 }
 
 .atm-c-split--alternate .atm-c-split__col:first-child {
-    left: 50%;
+    left: 42%;
 }
 
 .atm-c-split__col--empty:last-child {
@@ -405,7 +430,7 @@ padding:10px;
 background-color: #000;
 color:#e3e3e3;
 border: 1px inline #e3e3e3;
-font-family: 'clear_sans_thinregular', Arial, sans-serif;
+font-family: Arno;
 font-style:italic;    
 }
 .wpcf7 input[type="submit"],
@@ -415,7 +440,7 @@ color: #fff;
 display: inline-block;
 cursor: pointer;
 padding: .5rem 1rem;
-font-family: 'clear_sans_thinregular', Arial, sans-serif;
+font-family: Arno;
 text-align:center;
 text-transform:uppercase;
 }
@@ -449,12 +474,12 @@ text-transform:uppercase;
 }
 
 .atm-img-top img {
-    max-width: 100%;
+    max-height: 300px;
     -moz-transition: all 15s;
     -webkit-transition: all 15s;
     transition: all 15s;
-    height: 300px;
-    width: 100%;
+    height: auto;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -471,3 +496,161 @@ text-transform:uppercase;
     font-size: 1rem;
     font-weight: 300;
 }
+
+.atm-restro-count {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.atm-restro-count h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.atm-restro-count h4 {
+    font-size: 1.6rem;
+}
+
+/* Lightbox Gallery CSS */
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+/* Back to top button Design */
+
+#atm-btn-back-to-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#atm-btn-back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#atm-btn-back-to-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#atm-btn-back-to-top:active {
+  background-color: #555;
+}
+
+#atm-btn-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Main Carousel */
+
+.carousel-main li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    margin: 0 8px;
+}
+
+.carousel-main .active {
+    background-color: #9d0e04;
+}
+
+/* Carousel Design for Careers page id="career_carousel" */
+
+.atm-career-carousel-caption {
+    bottom: -1px;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
+
+.atm-career-carousel-flex {
+    padding: 0;
+    color: #555;
+}
+
+.atm-career-carousel-prev, .atm-career-carousel-next {
+    background-color: #000000;
+    width: 26px;
+    height: 48px;
+    line-height: 48px;
+    border: 2px solid transparent;
+    margin: 1px;
+    top: 38%;
+}
+
+/* Another Carousel Design with id="about_carousel" */
+
+.atm-about-carousel {
+    position: absolute;
+    width: 50%;
+    left: 10%;
+}
+
+.atm-about-carousel-indicator {
+    top: 100%;
+    left: -75%;
+}
+
+.atm-about-carousel-indicator li {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    filter: grayscale(0);
+    border: 3px solid #0067b8;
+    display: inline-block;
+    cursor: pointer;
+}
+

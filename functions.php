@@ -122,4 +122,9 @@ function atom_custom_header_setup() {
 
 add_action( 'after_setup_theme', 'atom_custom_header_setup' );
 
+/**
+XML-RPC is a method that allows third party apps to communicate with your WordPress site remotely. 
+This could cause security issues and can be exploited by hackers.
+**/
+add_filter( 'xmlrpc_enabled', '__return_false' );
 ?>

@@ -1,4 +1,5 @@
 <!-- Main Menu Bar -->
+<?php if ( is_404() == false ) : ?>
 <nav class="navbar navbar-expand-lg">
 	<div id="sticky" class="container-fluid fixed-top px-5">
 	<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
@@ -12,7 +13,7 @@
 		<?php } ?>
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+	  <i class="fa fa-bars"></i>
 	</button>
 
 	  <?php
@@ -43,14 +44,14 @@
       	</ul>
       	<form class="form-inline">
 			<!-- <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search"> -->
-			<button type="submit" class="atm-btn atm-btn-brand">Reservations</button>
+			<a href="reservation" target="_blank"><button type="submit" class="atm-btn atm-btn-brand">Reservations</button></a>
 		</form>
     </div>
   </div>
 </nav>
   
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+	<ol class="carousel-indicators carousel-main">
 	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	  <li data-target="#myCarousel" data-slide-to="1"></li>
 	  <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -75,3 +76,4 @@
 	  <span class="sr-only">Next</span>
 	</a>
 </div>
+<?php endif; ?>

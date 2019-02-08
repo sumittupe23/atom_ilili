@@ -7,11 +7,39 @@
 		</h3>
 	</div>
 </section>
-<section class="atm-c-tout-overlay atm-c-tout-overlay--dimmed" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/about_us.jpg'); height: 359px;" role="img" aria-label="Ambassadors of Hospitality">
-	    <div class="container">
-	    <h2 class="h1">Ambassadors of Hospitality</h2>
-	    <a href="#" class="atm-btn atm-btn-brand-alt">About Us</a>
+<section class="atm-c-tout-overlay atm-c-tout-overlay--dimmed" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg');" role="img" aria-label="Ambassadors of Hospitality">
+    <?php 
+    	if ( is_active_sidebar('restro_count') ) :
+    ?>
+    <div class="container">
+	    <div class="row justify-content-center">
+	    	<div class="col-md-3">
+	    		<div class="atm-restro-count">
+	    			<h1>10</h1>
+	    			<h4>Countries</h4>
+	    		</div>
+	    	</div>
+	    	<div class="col-md-3">
+	    		<div class="atm-restro-count">
+	    			<h1>53</h1>
+	    			<h4>Cities</h4>
+	    		</div>
+	    	</div>
+	    	<div class="col-md-3">
+	    		<div class="atm-restro-count">
+	    			<h1>81</h1>
+	    			<h4>Restaurants</h4>
+	    		</div>
+	    	</div>
+	    	<div class="col-md-3">
+	    		<div class="atm-restro-count">
+	    			<h1>8</h1>
+	    			<h4>Brands</h4>
+	    		</div>
+	    	</div>
+	    </div>
 	</div>
+	<?php endif; ?>
 </section>
 
 <!-- Body Sections -->
@@ -20,30 +48,48 @@
 	<div class="atm-c-split__col ">
 		<div class="atm-c-split__col-inner">
 			<div class="atm-c-split__content atm-content">
-				<h2 class="h2 atm-c-split__heading">Our menu is never done</h2>
-				<p>Every dish at ilili has it's own story from the traditional recipes direct from Lebanon, to modern updates that tell the history of our team, of our cooks and chefs who have left their mark on our kitchen, and our serving staff and managers who have been ambassadors of hospitality. Our menu is never done - we find inspiration all around, in new ingredients, new approaches, and fresh takes on old standards.</p>
-				<a href="#" class="atm-c-btn atm-c-btn-brand-alt">View Menus</a>
+				<h2 class="h2 atm-c-split__heading">Pursuit of Perfection</h2>
+				<p>Multiple successful ventures have not kept Master Chef Sanjeev Kapoor away from indulging in his passion as a creator of culinary works of art. With a plethora of restaurants serving innovative and exciting Indian cuisine as well as other popular cuisines from the world, both in India and abroad, SK Restaurants aims to take the vision of Chef Sanjeev Kapoor to new heights.</p>
+				<div class="row my-4 align-items-center">
+					<div class="col">
+						<a href="https://theyellowchilli.com/" target="_blank" title="The Yellow Chilli"><img width="75" src="<?php echo get_bloginfo('template_directory'); ?>/assets/tyc_logo.png"></a>
+					</div>
+					<div class="col">
+						<a href="https://hongkongrestaurant.co.in/" target="_blank" title="Hong Kong Restaurant"><img width="75" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hk_logo.jpg"></a>
+					</div>
+					<div class="col">
+						<a href="http://suravie.com/" target="_blank" title="Suravie"><img width="75" src="<?php echo get_bloginfo('template_directory'); ?>/assets/suravie_logo.png"></a>
+					</div>
+					<div class="col">
+						<a href="#" target="_blank" title="Khazana"><img width="75" src="<?php echo get_bloginfo('template_directory'); ?>/assets/khazana_logo.png"></a>
+					</div>
+					<div class="col">
+						<a href="#" target="_blank" title="Signature"><img width="75" src="<?php echo get_bloginfo('template_directory'); ?>/assets/signature_logo.png"></a>
+					</div>
+				</div>
+				<a href="#" class="atm-c-btn atm-c-btn-brand-alt">Know More</a>
 			</div>
 		</div>
 	</div>		
 
 	<div class="atm-c-split__col atm-c-split__col--empty">
 		<div class="atm-c-split__col-inner">
-				<div class="atm-c-split__image" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/section_3.jpg');"></div>
+				<div class="atm-c-split__image" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/shaam_savera.jpg');"></div>
 		</div>
 	</div>
 </section>
 
+<!-- Latest Updates Section -->
 <section class="mt-5 mb-5 container-fluid">
 	<div class="atm-updates">	
 		<div class="row justify-content-center">
 			<div class="col"><h2>Latest Updates</h2></div>
 		</div><hr>
 		<div class="mt-5 row justify-content-center">
-			<div class="col-md-4">
+			<div class="col-md-5 col-lg-4">
 				<div class="card atm-card">
 				  <div class="atm-img-top">
-				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/14068Philippe_Massoud_001.jpg" alt="Card image cap">
+				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/14068Philippe_Massoud_001.jpg" alt="Card image cap">
 				  </div>
 
 				  <div class="atm-card-body card-body">
@@ -52,10 +98,10 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-5 col-lg-4">
 				<div class="card atm-card">
 				  <div class="atm-img-top">
-				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/72823Single_Dish.jpg" alt="Card image cap">
+				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/72823Single_Dish.jpg" alt="Card image cap">
 				  </div>
 
 				  <div class="atm-card-body card-body">
@@ -64,10 +110,10 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-5 col-lg-4">
 				<div class="card atm-card">
 				  <div class="atm-img-top">
-				  	<img class="card-img-top" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/48214Our_food.jpg" alt="Card image cap">
+				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/48214Our_food.jpg" alt="Card image cap">
 				  </div>
 
 				  <div class="atm-card-body card-body">

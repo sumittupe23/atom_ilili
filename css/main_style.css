@@ -28,10 +28,10 @@ body {
 	margin: 0;
     font-weight: 300;
     letter-spacing: 1px;
-    font-family: 'clear_sans_thinregular', Arial, sans-serif;
+    font-family: Arno;
     font-size: 1rem;
     line-height: 1.25;
-    color: #222;
+    color: rgba(0,0,0,0.9);
     background-color: #fcf8f4; 
 }
 
@@ -101,7 +101,7 @@ p {
 }
 
 a {
-  color: #000;
+    color: #000;
 	transition: color .2s ease-in-out 0s;
 	background-color: transparent;
 }
@@ -110,6 +110,11 @@ a:hover {
     color: #000;
     text-decoration: none;
 }
+
+/*a:focus {
+    outline: 2px dashed #000 !important;
+    box-shadow: none;
+}*/
 
 img {
     vertical-align: middle;

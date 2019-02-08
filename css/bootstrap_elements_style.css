@@ -25,18 +25,6 @@ nav .fixed-top {
 	width: 30%;
 }
 
-.carousel-indicators li {
-	border-radius: 50%;
-	width: 12px;
-	height: 12px;
-	background-color: #000;
-	margin: 0 8px;
-}
-
-.carousel-indicators .active {
-	background-color: #9d0e04;
-}
-
 .dropdown-menu {
 	font-size: .8rem;
 }
@@ -44,3 +32,4 @@ nav .fixed-top {
 .nav-item:hover .dropdown-menu {
 	display: inline-block;
 }
+
