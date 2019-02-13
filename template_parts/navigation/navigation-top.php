@@ -32,20 +32,20 @@
 		        $link = $item->url;
 		        $title = $item->title;
 		        // item does not have a parent so menu_item_parent equals 0 (false)
-		        if ( !$item->menu_item_parent ):
+		        if ( !$item->menu_item_parent && $link != "http://localhost/wordpress/reservations/" ):
 		        // save this id for later comparison with sub-menu items
 		        $parent_id = $item->ID;
 		    ?>
       		<li class="nav-item">
 				<a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?></a></li>
-				<?php endif; ?>
+				
+				<?php elseif( $link == "http://localhost/wordpress/reservations/" ) : ?>
+					<a href="<?php echo $link; ?>"><button type="submit" class="atm-btn atm-btn-brand"><?php echo $title; ?></button></a>
+				<?php endif; ?>	
+				
 					<!-- Nested Menus not working -->
 		<?php $count++; endforeach; ?>
       	</ul>
-      	<form class="form-inline">
-			<!-- <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search"> -->
-			<a href="reservation" target="_blank"><button type="submit" class="atm-btn atm-btn-brand">Reservations</button></a>
-		</form>
     </div>
   </div>
 </nav>

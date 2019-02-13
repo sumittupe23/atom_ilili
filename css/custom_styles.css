@@ -416,41 +416,11 @@
     transform: translateY(-5px);
 }
 
+/* Error spotting for the page */
+
 .error-template {padding: 40px 15px;text-align: center;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
 .error-actions .btn { margin-right:10px; }
-
-div.wpcf7 { 
-background-color: #000;
-padding:10px;
-}
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"],
-.wpcf7 textarea {
-background-color: #000;
-color:#e3e3e3;
-border: 1px inline #e3e3e3;
-font-family: Arno;
-font-style:italic;    
-}
-.wpcf7 input[type="submit"],
-.wpcf7 input[type="button"] { 
-background-color:rgba(0,0,0,0.4);
-color: #fff;
-display: inline-block;
-cursor: pointer;
-padding: .5rem 1rem;
-font-family: Arno;
-text-align:center;
-text-transform:uppercase;
-}
-
-.wpcf7 input[type="submit"]:hover,
-.wpcf7 input[type="button"]:hover {
-    border: 1px outline #e3e3e3;
-    background-color: #fff;
-    color: #000;
-}
 
 .atm-updates {
     font-size: 1.5rem;
@@ -654,3 +624,80 @@ text-transform:uppercase;
     cursor: pointer;
 }
 
+/* Reservation Section Design */
+
+.atm-reserve {
+    color: #fff;
+    padding: 4rem 4.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.atm-reserve h1 {
+    color: #c19c5a;
+    padding-bottom: 1rem; 
+}
+
+.atm-reserve span {
+    color: #fff;
+    font-style: italic;
+}
+
+/* Reservation Section Form Design */
+
+.atm-res-form {
+    padding: 3.5rem 1rem 0 1rem;
+    font-size: 0.9rem;
+    font-family: hum, sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.01rem;
+}
+
+.input_field {
+    background-color: transparent;
+    font-family: hum, sans-serif;
+    border-bottom: 0.5px solid #d1d3d4;
+    padding-bottom: 0.5rem;
+    font-weight: 100;
+}
+
+.input_field .atm-name, .atm-mobile, .atm-email {
+    color: #d1d3d4;
+}
+
+.input_field i {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d1d3d4;
+    color: transparent;
+}
+
+.brands-menu {
+    border: 0.5px solid #d1d3d4;
+    flex-direction: column;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+}
+
+/* Upcoming Events Design */
+
+.atm-events {
+    font-family: Arno;
+    font-weight: 400;
+    color: #414042;
+    line-height: 1.8rem;
+}
+
+.atm-events hr {
+    border: 1px solid #080808;
+}
+
+.atm-events h4 {
+    padding-top: 2rem;
+    font-family: Arno;
+    color: #b58b3c;
+    font-style: italic;
+}
+
+.atm-events h6 {
+    font-family: Arno;
+    line-height: 3rem;
+}

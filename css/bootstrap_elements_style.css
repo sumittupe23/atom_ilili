@@ -1,9 +1,5 @@
 /* This stylesheet is used to alter the bootstrap inbuilt classes */
 
-.nav-link {
-	padding: 0 1rem;
-}
-
 nav .fixed-top {
 	top: 52px;
 }
@@ -33,3 +29,62 @@ nav .fixed-top {
 	display: inline-block;
 }
 
+/* Newsletter Contact Form Design */
+
+div.wpcf7 {
+
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border: medium none;
+    font-family: unset;
+	font-size: unset;
+	line-height: unset;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	background-color: transparent;
+	width: 180px;
+	/*color:#e3e3e3;
+	border: 1px inline #e3e3e3;
+	font-family: Arno;
+	font-style:italic;*/    
+}
+
+.wpcf7 input[type="tel"] {
+	background-color: transparent;
+	width: 120px;
+}
+
+.wpcf7-select, .wpcf7 input[type="date"] {
+	background-color: transparent;
+    color: #d1d3d4;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.wpcf7-select option {
+	color: #000;
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] { 
+	background-color: #b58b3c;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	padding: .5rem 1rem;
+	font-family: hum, sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	border-radius: 0;
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="button"]:hover {
+    /*border: 1px outline #e3e3e3;
+    background-color: #fff;
+    color: #000;*/
+}
