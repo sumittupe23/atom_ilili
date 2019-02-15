@@ -2,6 +2,7 @@
 /**
 Template Name: Careers Page
 **/
+echo do_shortcode( '[atm_slider/]' );
 get_header();
 ?>
 
@@ -90,7 +91,7 @@ get_header();
 		    	<div class="col-xl-5 align-self-center">
 		    		<span>With a plethora of restaurants serving innovative and exciting Indian cuisine as well as other popular cuisines from the world, both in India and abroad, SK Restaurants aims to take the vision of Chef Sanjeev Kapoor to new heights.</span>
 		    	</div>
-		    	<div class="col-lg-5 pt-5 col-lg-0">
+		    	<div class="col-5">
 		    		<div class="card">
 		    			<img class="card-img" src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_3.jpg" alt="" style="width:100%;">
 		    		</div>

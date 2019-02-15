@@ -2,6 +2,7 @@
 /**
 Template Name: Brands Page
 **/
+echo do_shortcode( '[atm_slider/]' );
 get_header();
 ?>
 <section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate">

@@ -90,7 +90,7 @@
 }
 
 .atm-btn-brand {
-	font-family: 'Cinzel', serif;
+	font-family: 'Cinzel';
 	color: #fff;
 	background-color: #000;
 	border-color: #000;
@@ -167,23 +167,32 @@
     letter-spacing: .05rem;
     word-wrap: break-word;
 }
-.atm-bottom-nav-address {
-    font-size: 1rem;
-    font-weight: 300;
+
+.atm-bottom-nav-address > h3 {
+    text-align: left;
 }
 
-.atm-bottom-nav-social {
+.atm-bottom-nav-social, .atm-bottom-nav-news {
     text-align: center;
 }
 
 .atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
+    font-family: 'Goudy Old Style';
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
     padding-bottom: 1rem;
-    text-align: center;
 }
 
 .atm-about-section-top {
-	text-align: center;
+    text-align: center;
 	padding: 4rem 10rem;
+}
+
+.atm-about-section-top h3 {
+    font-family: 'Goudy Old Style';
+    font-size: 1.35rem;
+    font-weight: 200;
 }
 
 .atm-bottom-nav-copy {
@@ -194,7 +203,7 @@
 }
 
 .atm-btn-brand-alt {
-	font-family: 'Cinzel', serif;
+	font-family: 'Cinzel';
 	color: #333;
 	background-color: #fff;
 	border-color: #333;
@@ -223,7 +232,7 @@
     background-position: center center;
     position: relative;
     z-index: 0;
-    min-height: 20rem;
+    min-height: 28rem;
     text-align: center;
     color: #fff;
     background-color: #222;
@@ -345,7 +354,7 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel';
     color: #000;
     border-bottom-color: #000;
 }
@@ -430,7 +439,17 @@
 }
 
 .atm-updates, .row h2 {
-    text-align: center;
+    text-align: left;
+}
+
+.atm-updates, .row, .col span {
+    font-family: 'Goudy Old Style';
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.atm-updates hr {
+    border: 1px solid #080808;
 }
 
 .atm-card {
@@ -462,23 +481,33 @@
     transform: scale(1.2);
 }
 
+.atm-card-body h3 {
+    font-family: 'Goudy Old Style';
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
 .atm-card-body span {
+    font-family: 'Goudy Old Style';
     font-size: 1rem;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .atm-restro-count {
-    font-family: 'Cinzel', serif;
     text-align: center;
 }
 
 .atm-restro-count h1 {
-    font-size: 2.6rem;
-    font-weight: 500;
+    font-family: 'Goudy Old Style';
+    font-size: 2.75rem;
+    font-weight: 600;
 }
 
 .atm-restro-count h4 {
-    font-size: 1.6rem;
+    font-family: 'Goudy Old Style';
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 /* Lightbox Gallery CSS */
@@ -540,7 +569,7 @@
 
 #atm-btn-back-to-top::after {
   content: "\f077";
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
@@ -648,14 +677,14 @@
 .atm-res-form {
     padding: 3.5rem 1rem 0 1rem;
     font-size: 0.9rem;
-    font-family: hum, sans-serif;
+    font-family: 'hum', sans-serif;
     font-weight: 100;
     letter-spacing: 0.01rem;
 }
 
 .input_field {
     background-color: transparent;
-    font-family: hum, sans-serif;
+    font-family: 'hum', sans-serif;
     border-bottom: 0.5px solid #d1d3d4;
     padding-bottom: 0.5rem;
     font-weight: 100;
@@ -680,7 +709,7 @@
 /* Upcoming Events Design */
 
 .atm-events {
-    font-family: Arno;
+    font-family: 'Arno';
     font-weight: 400;
     color: #414042;
     line-height: 1.8rem;
@@ -692,12 +721,18 @@
 
 .atm-events h4 {
     padding-top: 2rem;
-    font-family: Arno;
+    font-family: 'Arno';
     color: #b58b3c;
     font-style: italic;
 }
 
 .atm-events h6 {
-    font-family: Arno;
+    font-family: 'Arno';
     line-height: 3rem;
 }
+
+.form-control {
+    width: 100% !important;
+}
+
+/* Section Animations */

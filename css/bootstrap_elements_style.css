@@ -46,7 +46,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .wpcf7 input[type="email"],
 .wpcf7 textarea {
 	background-color: transparent;
-	width: 180px;
+	width: 220%;
 	/*color:#e3e3e3;
 	border: 1px inline #e3e3e3;
 	font-family: Arno;
@@ -55,7 +55,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 .wpcf7 input[type="tel"] {
 	background-color: transparent;
-	width: 120px;
+	width: 250%;
 }
 
 .wpcf7-select, .wpcf7 input[type="date"] {
@@ -84,7 +84,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 .wpcf7 input[type="submit"]:hover,
 .wpcf7 input[type="button"]:hover {
-    /*border: 1px outline #e3e3e3;
+    border: 1px outline #e3e3e3;
     background-color: #fff;
-    color: #000;*/
+    color: #000;
 }

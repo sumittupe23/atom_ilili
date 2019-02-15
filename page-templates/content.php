@@ -1,16 +1,16 @@
+<?php echo do_shortcode( '[atm_slider/]' ); ?>
+
 <!-- About Section -->
 
 <section class="container">
 	<div class="atm-about-section-top">
 		<h3>
-			ilili means “tell me” in colloquial Lebanese and this is exactly what we want you to do. Each passing of our shared plates and the breaking of freshly baked Levantine pita opens up a new conversation.
+			Ilili means “tell me” in colloquial Lebanese and this is exactly what we want you to do. Each passing of our shared plates and the breaking of freshly baked Levantine pita opens up a new conversation.
 		</h3>
 	</div>
 </section>
 <section class="atm-c-tout-overlay atm-c-tout-overlay--dimmed" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg');" role="img" aria-label="Ambassadors of Hospitality">
-    <?php 
-    	if ( is_active_sidebar('restro_count') ) :
-    ?>
+    
     <div class="container">
 	    <div class="row justify-content-center">
 	    	<div class="col-md-3">
@@ -39,7 +39,7 @@
 	    	</div>
 	    </div>
 	</div>
-	<?php endif; ?>
+	
 </section>
 
 <!-- Body Sections -->
@@ -82,9 +82,12 @@
 <!-- Latest Updates Section -->
 <section class="mt-5 mb-5 container-fluid">
 	<div class="atm-updates">	
-		<div class="row justify-content-center">
-			<div class="col"><h2>Latest Updates</h2></div>
-		</div><hr>
+		<div class="row">
+			<div class="col-4"><h2>Latest Updates</h2><hr></div>
+		</div>
+		<div class="row">
+			<div class="col"><span>Click or tap on the images to see what's on at SK Restaurants around the world, as well as a whole lot of snaps from our guests!</span></div>
+		</div>
 		<div class="mt-5 row justify-content-center">
 			<div class="col-md-5 col-lg-4">
 				<div class="card atm-card">

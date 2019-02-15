@@ -49,31 +49,4 @@
     </div>
   </div>
 </nav>
-  
-<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-	<ol class="carousel-indicators carousel-main">
-	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	  <li data-target="#myCarousel" data-slide-to="1"></li>
-	  <li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-	  <div class="atm-carousel-item carousel-item active">
-	    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_1.jpg" alt="Los Angeles" style="width:100%;">
-	  </div>
-	  <div class="atm-carousel-item carousel-item">
-	    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_2.jpg" alt="Los Angeles" style="width:100%;">
-	  </div>
-	  <div class="atm-carousel-item carousel-item">
-	    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_3.jpg" alt="Los Angeles" style="width:100%;">
-	  </div>
-	</div>
-	<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
-</div>
 <?php endif; ?>

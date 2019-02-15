@@ -2,6 +2,7 @@
 /**
 Template Name: Story Page
 **/
+echo do_shortcode( '[atm_slider/]' );
 get_header();
 ?>
 

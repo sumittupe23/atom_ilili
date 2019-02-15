@@ -1,5 +1,14 @@
 /* All custom animations are defined in this file */
 
+@-webkit-keyframes atmbtnbrand {
+	8%{
+		border-radius: 20px 0;
+	}
+	100%{
+		border-radius: 20px 0;
+	}
+}
+
 @keyframes atmbtnbrand {
 	8%{
 		border-radius: 20px 0;
