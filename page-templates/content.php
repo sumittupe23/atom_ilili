@@ -1,15 +1,15 @@
-<?php echo do_shortcode( '[atm_slider/]' ); ?>
+<?php echo do_shortcode( "[atm_slider id='14328' /]" ); ?>
 
 <!-- About Section -->
 
-<section class="container">
+<section class="container revealable">
 	<div class="atm-about-section-top">
 		<h3>
 			Ilili means “tell me” in colloquial Lebanese and this is exactly what we want you to do. Each passing of our shared plates and the breaking of freshly baked Levantine pita opens up a new conversation.
 		</h3>
 	</div>
 </section>
-<section class="atm-c-tout-overlay atm-c-tout-overlay--dimmed" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg');" role="img" aria-label="Ambassadors of Hospitality">
+<section id="restro_counts" class="atm-c-tout-overlay atm-c-tout-overlay--dimmed revealable" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg');" role="img" aria-label="Ambassadors of Hospitality">
     
     <div class="container">
 	    <div class="row justify-content-center">
@@ -44,7 +44,7 @@
 
 <!-- Body Sections -->
 
-<section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate">
+<section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate revealable">
 	<div class="atm-c-split__col ">
 		<div class="atm-c-split__col-inner">
 			<div class="atm-c-split__content atm-content">
@@ -80,7 +80,7 @@
 </section>
 
 <!-- Latest Updates Section -->
-<section class="mt-5 mb-5 container-fluid">
+<section class="mt-5 mb-5 container-fluid revealable">
 	<div class="atm-updates">	
 		<div class="row">
 			<div class="col-4"><h2>Latest Updates</h2><hr></div>

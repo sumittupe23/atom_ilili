@@ -12,7 +12,7 @@ var atm_btn = $('#atm-btn-back-to-top');
 // var res_href = $(location).attr('href', '?a=b');
 var res_href = window.location;
 
-if ( res_href == "http://localhost/wordpress/reservations/" ) {
+if ( res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" ) {
 	$('#sticky').addClass('atm-sticky');
 }
 
@@ -23,8 +23,10 @@ if ( res_href == "http://localhost/wordpress/reservations/" ) {
 		// Code for sticky header element
 		// console.log(res_href);
 		// console.log($(this).scrollTop());
+		
+		// $( 'section' ).addClass( 'revealed' );
 
-		if ( $(this).scrollTop() > 0 || res_href == "http://localhost/wordpress/reservations/" ) {
+		if ( $(this).scrollTop() > 0 || res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" ) {
 			$('#sticky').addClass('atm-sticky');
 			// console.log($(this).height());
 		} else {
@@ -42,5 +44,31 @@ if ( res_href == "http://localhost/wordpress/reservations/" ) {
 	  e.preventDefault();
 	  $('html, body').animate( {scrollTop: 0 }, 1000 );
 	});
+
+var $revealable = $('.revealable');
+var $window = $(window);
+
+function check_if_in_view() {
+	var window_height = $window.height();
+	var window_top_position = $window.scrollTop();
+	var window_bottom_position = ( window_top_position + window_height );
+
+	$.each( $revealable, function(){
+		var $element = $(this);
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = ( element_top_position + element_height );
+
+		// Check to see if current container is within viewport
+		if ( (element_bottom_position >= window_top_position) && ( element_top_position <= window_bottom_position ) ) {
+			$element.addClass( 'revealed' );
+		} else {
+			$element.removeClass( 'revealed' );
+		}
+	});
+}
+
+$window.on( 'scroll resize', check_if_in_view );
+$window.trigger( 'scroll' );
 
 });

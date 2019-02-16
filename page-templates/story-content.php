@@ -2,13 +2,13 @@
 /**
 Template Name: Story Page
 **/
-echo do_shortcode( '[atm_slider/]' );
+echo do_shortcode( "[atm_slider id='14328' /]" );
 get_header();
 ?>
 
 <!-- About Section -->
 
-<section class="container">
+<section class="container revealable">
 	<div class="atm-about-section-top">
 		<h3>
 			ilili means “tell me” in colloquial Lebanese and this is exactly what we want you to do. Each passing of our shared plates and the breaking of freshly baked Levantine pita opens up a new conversation.
@@ -24,7 +24,7 @@ get_header();
 
 <!-- Gallery Section -->
 
-<div class="mt-5 container gallery-container">
+<div class="mt-5 container gallery-container revealable">
 	<div class="row justify-content-center">
 		<div class="col"><h2>Gallery</h2></div>
 	</div><hr>
@@ -69,7 +69,7 @@ get_header();
 </div>
 <!-- Body Sections -->
 
-<section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate">
+<section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate revealable">
 	<div class="atm-c-split__col ">
 		<div class="atm-c-split__col-inner">
 			<div class="atm-c-split__content atm-content">

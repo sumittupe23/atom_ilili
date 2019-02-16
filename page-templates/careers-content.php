@@ -2,11 +2,11 @@
 /**
 Template Name: Careers Page
 **/
-echo do_shortcode( '[atm_slider/]' );
+echo do_shortcode( "[atm_slider id='14328' /]" );
 get_header();
 ?>
 
-<div id="career_carousel" class="carousel slide my-5" data-ride="carousel">
+<div id="career_carousel" class="carousel slide my-5 revealable" data-ride="carousel">
 	<!-- <ol class="carousel-indicators">
 	  <li data-target="#career_carousel" data-slide-to="0" class="active"></li>
 	  <li data-target="#career_carousel" data-slide-to="1"></li>
@@ -75,7 +75,7 @@ get_header();
 	</a>
 </div>
 
-<div id="about_carousel" class="carousel my-5" data-ride="carousel" data-interval="false">
+<div id="about_carousel" class="carousel my-5 revealable" data-ride="carousel" data-interval="false">
 	<div class="atm-about-carousel mt-5">
 		<h5>Hear from employees</h5>
 		<ol class="carousel-indicators mb-auto atm-about-carousel-indicator">

@@ -3,30 +3,30 @@
 /* Sticky Top Bar */
 
 .atm-top-bar {
-	position: relative;
-	z-index: 10;
-	width: 100%;
-	font-size: .8rem;
-	background-color: #000;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    font-size: .8rem;
+    background-color: #000;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .atm-top-bar a {
-	color: #fff;
+    color: #fff;
 }
 
 .atm-top-bar a:hover {
-	color: rgba(252,248,244,0.7);
-	cursor: pointer;
+    color: rgba(252,248,244,0.7);
+    cursor: pointer;
 }
 
 .atm-sticky {
-	background-color: #fff;
-	top: 0px !important;
+    background-color: #fff;
+    top: 0px !important;
     box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
@@ -47,84 +47,84 @@
 /* Carousel Style */
 
 .atm-carousel-item img {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .atm-nav {
     flex-grow: 0;
     background: rgba(255,255,255,.8);
     text-transform: uppercase;
-	line-height: 1;
-	font-weight: 400;
-	font-size: .8rem;
+    line-height: 1;
+    font-weight: 400;
+    font-size: .8rem;
 }
 
 .atm-nav a:hover {
-	color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.7);
 }
 
 .atm-btn {
-	line-height: 1;
-	padding: .5rem 1rem !important;
-	border-radius: 0;
-	transition: all .2s ease-in-out 0s;
-	font-size: .8rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	display: inline-block;
-	font-weight: 400;
-	cursor: pointer;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-image-outset: 0;
-	border-image-repeat: stretch;
-	border-image-slice: 100%;
-	border-image-source: none;
-	border-image-width: 1;
+    line-height: 1;
+    padding: .5rem 1rem !important;
+    border-radius: 0;
+    transition: all .2s ease-in-out 0s;
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
 }
 
 .atm-btn-brand {
-	font-family: 'Cinzel';
-	color: #fff;
-	background-color: #000;
-	border-color: #000;
-	border: none;
+    font-family: 'Cinzel';
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border: none;
 }
 
 .atm-btn-brand:hover {
-	animation: atmbtnbrand 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	color: #fff;
-	background-color: #333;
-	border-color: #333;
+    animation: atmbtnbrand 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
 }
 
 .atm-bot-nav {
     flex-grow: 0;
     text-transform: uppercase;
-	line-height: 1;
-	font-weight: 400;
-	font-size: .8rem;
+    line-height: 1;
+    font-weight: 400;
+    font-size: .8rem;
 }
 
 .atm-bot-nav a:hover {
-	color: rgba(252,248,244,0.7);
+    color: rgba(252,248,244,0.7);
 }
 
 .atm-sticky-bot-nav {
-	background-color: #000;
-	padding: 1rem 2rem;
+    background-color: #000;
+    padding: 1rem 2rem;
 }
 
 .atm-bot-nav a {
-	color: #fff;
+    color: #fff;
 }
 
 .atm-icon {
@@ -132,37 +132,37 @@
 }
 
 .atm-sticky-bot-nav .atm-icon {
-	background-color: rgba(0,0,0,1);
-	border-radius: 50%;
+    background-color: rgba(0,0,0,1);
+    border-radius: 50%;
 }
 
 .atm-sticky-bot-nav .fb {
-	padding: .2rem .3rem .2rem .5rem;
+    padding: .2rem .3rem .2rem .5rem;
 }
 
 .atm-sticky-bot-nav .tw {
-	padding: .2rem .15rem .2rem .45rem;
+    padding: .2rem .15rem .2rem .45rem;
 }
 
 .atm-sticky-bot-nav .in {
-	padding: .2rem .35rem .2rem .45rem;	
+    padding: .2rem .35rem .2rem .45rem; 
 }
 
 .atm-sticky-bot-nav .atm-icon:hover {
-	background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.7);
 }
 
 .in:hover > .fa-instagram, .tw:hover > .fa-twitter, .fb:hover > .fa-facebook {
-	color: #000;
+    color: #000;
 }
 
 .atm-sticky-bottom {
-	bottom: 56px;
+    bottom: 56px;
 }
 
 .atm-bottom-nav {
-	width: 100%;
-	color: #fff;
+    width: 100%;
+    color: #fff;
     background-color: #000;
     letter-spacing: .05rem;
     word-wrap: break-word;
@@ -186,7 +186,7 @@
 
 .atm-about-section-top {
     text-align: center;
-	padding: 4rem 10rem;
+    padding: 4rem 10rem;
 }
 
 .atm-about-section-top h3 {
@@ -203,10 +203,10 @@
 }
 
 .atm-btn-brand-alt {
-	font-family: 'Cinzel';
-	color: #333;
-	background-color: #fff;
-	border-color: #333;
+    font-family: 'Cinzel';
+    color: #333;
+    background-color: #fff;
+    border-color: #333;
 }
 
 /* Brands Division Section */
@@ -303,7 +303,7 @@
 
 .atm-c-split__content {
     max-width: 90%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     padding: 3rem 3rem 2rem;
     box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
     border: 1px solid #f8f6f5;
@@ -384,7 +384,7 @@
 }
 
 .atm-c-split--alternate .atm-c-split__col:first-child {
-    left: 42%;
+    left: 50%;
 }
 
 .atm-c-split__col--empty:last-child {
@@ -443,7 +443,7 @@
 }
 
 .atm-updates, .row, .col span {
-    font-family: 'Goudy Old Style';
+    font-family: 'hum', sans-serif;
     font-weight: 300;
     font-size: 1rem;
 }
@@ -660,6 +660,7 @@
     padding: 4rem 4.5rem;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 80px 0;
 }
 
 .atm-reserve h1 {
@@ -736,3 +737,15 @@
 }
 
 /* Section Animations */
+
+.revealable {
+    -webkit-transition: 1.5s ease all;
+    transition: 1.5s ease all;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.revealed {
+    opacity: 1;
+    transform: translateY(0px);
+}
