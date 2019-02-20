@@ -12,7 +12,7 @@ var atm_btn = $('#atm-btn-back-to-top');
 // var res_href = $(location).attr('href', '?a=b');
 var res_href = window.location;
 
-if ( res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" ) {
+if ( res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" || res_href == "http://localhost/wordpress/story/" || res_href == "http://localhost/wordpress/partner/" ) {
 	$('#sticky').addClass('atm-sticky');
 }
 
@@ -26,7 +26,7 @@ if ( res_href == "http://localhost/wordpress/reservations/" || res_href == "http
 		
 		// $( 'section' ).addClass( 'revealed' );
 
-		if ( $(this).scrollTop() > 0 || res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" ) {
+		if ( $(this).scrollTop() > 0 || res_href == "http://localhost/wordpress/reservations/" || res_href == "http://localhost/wordpress/brands/" || res_href == "http://localhost/wordpress/story/" || res_href == "http://localhost/wordpress/partner/" ) {
 			$('#sticky').addClass('atm-sticky');
 			// console.log($(this).height());
 		} else {

@@ -707,6 +707,37 @@
     padding: 0.7rem 0.5rem 0.7rem 0.5rem;
 }
 
+/* Franchise Form Design */
+.atm-fr-form {
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-family: 'hum', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.01rem;
+    color: #000;
+}
+
+.input_field_fr {
+    background-color: transparent;
+    font-family: 'hum', sans-serif;
+    border: 0.5px solid #000;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-weight: 200;
+}
+
+.radio_field_fr {
+    background-color: transparent;
+    font-family: 'hum', sans-serif;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-weight: 200;
+}
+
+.about-us-menu {
+    width: 100%;
+}
+
 /* Upcoming Events Design */
 
 .atm-events {
@@ -748,4 +779,9 @@
 .revealed {
     opacity: 1;
     transform: translateY(0px);
+}
+
+/* Location Map Design */
+.atm-loc-map {
+    background-color: #fff;
 }
