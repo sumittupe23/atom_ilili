@@ -47,8 +47,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .wpcf7 textarea {
 	background-color: transparent;
 	width: 220%;
-	/*color:#e3e3e3;
-	border: 1px inline #e3e3e3;
+	color: currentColor;
+	/*border: 1px inline #e3e3e3;
 	font-family: Arno;
 	font-style:italic;*/    
 }
@@ -60,7 +60,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 .wpcf7-select, .wpcf7 input[type="date"] {
 	background-color: transparent;
-    color: #d1d3d4;
+    color: currentcolor;
     width: 100%;
     opacity: 0.5;
 }

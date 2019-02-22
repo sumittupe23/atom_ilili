@@ -44,6 +44,52 @@ get_header();
     </div>
 </section>
 
+<!-- impeccable hospitality -->
+
+<section class="container-fluid revealable">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <h1 class="text-center">impeccable hospitality</h1><hr>
+            <span>With 82 restuarants in 50 cities  SK Restaurants offers Every dish at SKR has it's own story from the traditional Indian recipes to modern updates that tell the history of our team, of our cooks and chefs who have left their mark on our kitchen.</span>
+        </div>
+    </div>
+    <div class="row justify-content-center my-5">
+        <div class="col-md-3">
+            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_one.jpg" alt="">
+        </div>
+        <div class="col-md-3">
+            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_two.jpg" alt="">
+        </div>
+        <div class="col-md-3">
+            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_three.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- the world on a plate -->
+
+<section class="container-fluid revealable">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <h1 class="text-center">the world on a plate</h1><hr>
+            <span>With 82 restuarants in 50 cities  SK Restaurants offers Every dish at SKR has it's own story from the traditional Indian recipes to modern updates that tell the history of our team, of our cooks and chefs who have left their mark on our kitchen.</span>
+        </div>
+    </div>
+    <div class="row justify-content-center py-5">
+        <div class="col-md-8">
+            <div class="atm-loc-map row justify-content-between">
+            <!--<div class="col-md-2 revealable">
+                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/fork.png" alt="">
+                </div>
+                <div class="col-md-2 revealable">
+                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/spoon.png" alt="">
+                </div> -->
+                <img class="img-fluid" style="height: 780px;" src="<?php echo get_bloginfo('template_directory'); ?>/assets/locationmap.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Gallery Section -->
 
 <div class="mt-5 container gallery-container revealable">
@@ -56,32 +102,32 @@ get_header();
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/about_us.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/about_us.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/about_us.jpg" alt="">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/banner.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner.jpg" alt="">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_2.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_2.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_2.jpg" alt="">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_3.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_3.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/banner_3.jpg" alt="">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg" alt="">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="<?php echo get_bloginfo('template_directory'); ?>/assets/shaam_savera.jpg">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/shaam_savera.jpg" alt="Park">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/shaam_savera.jpg" alt="">
                 </a>
             </div>
        </div>

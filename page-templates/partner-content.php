@@ -46,17 +46,16 @@ get_header();
 						<div class="accordion md-accordion accordion-5" id="accordionEx5" role="tablist" aria-multiselectable="true">
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading30">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse30" aria-expanded="true"
 								aria-controls="collapse30">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Site Selection
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -70,17 +69,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading31">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse31" aria-expanded="true"
 								aria-controls="collapse31">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Training Support
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -93,17 +91,16 @@ get_header();
 						  </div>
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading32">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse32" aria-expanded="true"
 								aria-controls="collapse32">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Menu and Recipes
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -117,17 +114,16 @@ get_header();
 						  <!-- Accordion card -->
 							
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading33">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse33" aria-expanded="true"
 								aria-controls="collapse33">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Key Personnel
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -141,17 +137,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading34">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse34" aria-expanded="true"
 								aria-controls="collapse34">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Marketing Support
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -164,17 +159,16 @@ get_header();
 						  </div>
 						
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading35">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse35" aria-expanded="true"
 								aria-controls="collapse35">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Pricing
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -188,17 +182,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading36">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse36" aria-expanded="true"
 								aria-controls="collapse36">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Procurement
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -211,17 +204,16 @@ get_header();
 						  </div>
 							
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading37">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse37" aria-expanded="true"
 								aria-controls="collapse37">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Software/IT
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -235,17 +227,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading38">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse38" aria-expanded="true"
 								aria-controls="collapse38">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Interior Design Support
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -258,17 +249,16 @@ get_header();
 						  </div>
 							
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading39">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse39" aria-expanded="true"
 								aria-controls="collapse39">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Kitchen Layout
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -282,17 +272,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading40">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse40" aria-expanded="true"
 								aria-controls="collapse40">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Business Support
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -305,17 +294,16 @@ get_header();
 						  </div>
 							
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading41">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse41" aria-expanded="true"
 								aria-controls="collapse41">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Balance Score Card
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -329,17 +317,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading42">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse42" aria-expanded="true"
 								aria-controls="collapse42">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Rewards and Recognition
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -352,17 +339,16 @@ get_header();
 						  </div>
 							
 						<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading43">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse43" aria-expanded="true"
 								aria-controls="collapse43">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Quality Checks
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -376,17 +362,16 @@ get_header();
 						  <!-- Accordion card -->
 
 						  <!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading44">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse44" aria-expanded="true"
 								aria-controls="collapse44">
 								<i class="fa fa-question p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Profit and Loss Management
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 
@@ -398,17 +383,16 @@ get_header();
 							</div>
 						  </div>
 							<!-- Accordion card -->
-						  <div class="card mb-2">
+						  <div class="card mb-2 atm-accord-card">
 
 							<!-- Card header -->
 							<div class="card-header p-0 z-depth-1" role="tab" id="heading45">
 							  <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse45" aria-expanded="true"
 								aria-controls="collapse45">
 								<i class="fa fa-globe p-2 black-text" aria-hidden="true"></i>
-								<span class="text-uppercase white-text">
+								<span class="white-text">
 								  Franchisee Responsibilities
 								</span>
-								<span style="float: right;"><i class="fa fa-plus p-2 black-text" aria-hidden="true"></i></span>
 							  </a>
 							</div>
 

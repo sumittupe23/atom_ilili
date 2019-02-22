@@ -785,3 +785,69 @@
 .atm-loc-map {
     background-color: #fff;
 }
+
+/* People Page Design */
+
+.atm-dir-name {
+    padding: 10px 0 5px 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.atm-dir-post {
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    font-size: 0.85rem;
+}
+
+.custom_hr {
+    height: 100%;
+    width: 80%;
+    border-top: 2px solid;
+}
+
+.atm-key-header {
+    background-color: rgba(246,241,238,1);
+    border-bottom: 0;
+}
+
+.atm-key-name {
+    display: block;
+    padding: 0 0 5px 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+.atm-key-post {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+}
+
+.atm-accord-card {
+    background-color: transparent;
+    border: 0;
+}
+
+.atm-accord-card .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* Accordian Icon Toggle */
+
+div.accordion .card .card-header > a::after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    float: right;
+}
+
+div.accordion .card .card-header > a.collapsed::after{
+    font-family: "FontAwesome";
+    content: "\f067";
+    float: right;
+}
