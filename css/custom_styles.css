@@ -851,3 +851,51 @@ div.accordion .card .card-header > a.collapsed::after{
     content: "\f067";
     float: right;
 }
+
+.image-modal {
+    cursor: pointer;
+}
+
+/* People page modal design */
+
+.atm-modal-content {
+    border-radius: 0;
+}
+
+.atm-modal-name {
+    font-size: 1.25rem;
+}
+
+.atm-modal-icon-holder {
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.atm-modal-icon-holder.fb {
+    padding: .2rem .3rem .2rem .5rem;
+}
+
+.atm-modal-icon-holder.tw {
+    padding: .2rem .15rem .2rem .45rem;
+}
+
+.atm-modal-icon-holder.in {
+    padding: .2rem .35rem .2rem .45rem;
+}
+
+.atm-modal-icon-holder:hover {
+    background-color: black;
+}
+
+.atm-modal-icon-holder:hover > .atm-modal-icon {
+    color: #fff;
+}
+
+.atm-modal-icon {
+    color: #000;
+}
+
+.atm-modal-body {
+    text-align: justify;
+    font-size: 0.85rem;
+}

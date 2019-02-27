@@ -7,7 +7,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 
 <script>
+    var d = new Date();
+    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var day = d.getDate();
+    var n = d.getMonth();
+    var output = ((''+day).length<2 ? '0' : '') + day +
+                ((''+month[n]).length<2 ? ', 0' : ', ') + month[n]
+                + ' ' + d.getFullYear();
+
+    // console.log(output);
+
     (function($) {
+
+        var $date_dd = $('[name="atm-date"]');
 
         // create references to the 3 dropdown fields for later use.
 
@@ -23,6 +35,8 @@
             populate_fields();
         });
 
+         $('#atm-date-menu').change(function(){ populate_fields(); });
+
         function populate_fields() {
 
             var data = {
@@ -35,7 +49,8 @@
 
                 'make' : $makes_dd.val(),
                 'model' : $models_dd.val(),
-                'year' : $years_dd.val()
+                'year' : $years_dd.val(),
+                'output' : $date_dd.val()
             };
 
             // call the server side script, and on completion, update all dropdown lists with the received values.
@@ -46,6 +61,7 @@
                 $makes_dd.html('').append($('<option>').text(' -- Choose Brand -- '));
                 $models_dd.html('').append($('<option>').text(' -- Choose Country  -- '));
                 $years_dd.html('').append($('<option>').text(' -- Choose City -- '));
+                $date_dd.html('').append($('<option>').text(output));
 
                 $.each(all_values.makes, function() {
                     $option = $("<option>").text(this).val(this);

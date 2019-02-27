@@ -79,10 +79,10 @@ get_header();
         <div class="col-md-8">
             <div class="atm-loc-map row justify-content-between">
             <!--<div class="col-md-2 revealable">
-                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/fork.png" alt="">
+                    <img class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/fork.png" alt="">
                 </div>
                 <div class="col-md-2 revealable">
-                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/spoon.png" alt="">
+                    <img class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/spoon.png" alt="">
                 </div> -->
                 <img class="img-fluid" style="height: 780px;" src="<?php echo get_bloginfo('template_directory'); ?>/assets/locationmap.jpg" alt="">
             </div>
