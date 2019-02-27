@@ -1,7 +1,7 @@
 baguetteBox.run('.tz-gallery');
 
 
-$('key_people').on('click', function(ev){
+$('*').on('click', function(ev){
 	$( '#modal_main' ).on('click', function(even){ even.stopPropagation(); });
 
 	var modal_img_id = this.id

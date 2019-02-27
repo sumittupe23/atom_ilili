@@ -159,140 +159,113 @@ get_header();
 <!-- Key People -->
 <section class="container p-5 revealable">
 	<h1 class="text-center">KEY PEOPLE</h1><hr class="custom_hr">
-</section>
-<div id="key_people" class="carousel slide revealable" data-ride="carousel">
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<div class="container">	
-				<div class="row justify-content-center">
-					<div id="modal_6" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-						<div class="card">
-							<div class="card-image">
-								<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_one.jpg">
-							</div>
-							<div class="atm-key-header card-header text-center p-4">
-								<span id="atm_modal_name" class="atm-key-name">MICHAEL TUSK</span>
-								<span id="atm_modal_post" class="atm-key-post">Chef and Owner</span>
-							</div>
-							<div style="display: none;">
-							<span id="atm_modal_fb_link">www.facebook.com/</span>
-							<span id="atm_modal_tw_link">www.twitter.com/</span>
-							<span id="atm_modal_in_link">www.instagram.com/</span>
-							<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-							</div>
+	<div class="row mt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div id="modal_6" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_one.jpg">
+						</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">MICHAEL TUSK</span>
+							<span id="atm_modal_post" class="atm-key-post">Chef and Owner</span>
+						</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
 						</div>
 					</div>
-					<div id="modal_7" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-							<div class="card">
-								<div class="card-image">
-									<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_two.jpg">
-								</div>
-								<div class="atm-key-header card-header text-center p-4">
-									<span id="atm_modal_name" class="atm-key-name">NEIL STETZ</span>
-									<span id="atm_modal_post" class="atm-key-post">CHEF DE CUISINE</span>
-								</div>
-								<div style="display: none;">
-								<span id="atm_modal_fb_link">www.facebook.com/</span>
-								<span id="atm_modal_tw_link">www.twitter.com/</span>
-								<span id="atm_modal_in_link">www.instagram.com/</span>
-								<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-								</div>
-							</div>
+				</div>
+				<div id="modal_7" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_two.jpg">
 						</div>
-					<div id="modal_8" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-						<div class="card">
-							<div class="card-image">
-								<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_three.jpg">
-							</div>
-							<div class="atm-key-header card-header text-center p-4">
-								<span id="atm_modal_name" class="atm-key-name">YANNICK DUMONCEAU</span>
-								<span id="atm_modal_post" class="atm-key-post">PASTRY CHEF</span>
-							</div>
-							<div style="display: none;">
-							<span id="atm_modal_fb_link">www.facebook.com/</span>
-							<span id="atm_modal_tw_link">www.twitter.com/</span>
-							<span id="atm_modal_in_link">www.instagram.com/</span>
-							<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-							</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">NEIL STETZ</span>
+							<span id="atm_modal_post" class="atm-key-post">CHEF DE CUISINE</span>
+						</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
 						</div>
 					</div>
-					<div id="modal_9" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-						<div class="card">
-							<div class="card-image">
-								<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_four.jpg">
-							</div>
-							<div class="atm-key-header card-header text-center p-4">
-								<span id="atm_modal_name" class="atm-key-name">MATT CERN</span>
-								<span id="atm_modal_post" class="atm-key-post">GENERAL MANAGER</span>
-							</div>
-							<div style="display: none;">
-							<span id="atm_modal_fb_link">www.facebook.com/</span>
-							<span id="atm_modal_tw_link">www.twitter.com/</span>
-							<span id="atm_modal_in_link">www.instagram.com/</span>
-							<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-							</div>
+				</div>
+				<div id="modal_8" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_three.jpg">
 						</div>
-					</div>
-					<div id="modal_10" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-						<div class="card">
-							<div class="card-image">
-								<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_five.jpg">
-							</div>
-							<div class="atm-key-header card-header text-center p-4">
-								<span id="atm_modal_name" class="atm-key-name">KEI TERAUCHI</span>
-								<span id="atm_modal_post" class="atm-key-post">ASSISTANT GENERAL MANAGER</span>
-							</div>
-							<div style="display: none;">
-							<span id="atm_modal_fb_link">www.facebook.com/</span>
-							<span id="atm_modal_tw_link">www.twitter.com/</span>
-							<span id="atm_modal_in_link">www.instagram.com/</span>
-							<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-							</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">YANNICK DUMONCEAU</span>
+							<span id="atm_modal_post" class="atm-key-post">PASTRY CHEF</span>
 						</div>
-					</div>
-					<div id="modal_11" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
-						<div class="card">
-							<div class="card-image">
-								<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_six.jpg">
-							</div>
-							<div class="atm-key-header card-header text-center p-4">
-								<span id="atm_modal_name" class="atm-key-name">CAMERON TYLER</span>
-								<span id="atm_modal_post" class="atm-key-post">LEAD SOMMELIER</span>
-							</div>
-							<div style="display: none;">
-							<span id="atm_modal_fb_link">www.facebook.com/</span>
-							<span id="atm_modal_tw_link">www.twitter.com/</span>
-							<span id="atm_modal_in_link">www.instagram.com/</span>
-							<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
-							</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="carousel-item">
-			
-		</div>
-	</div>
-	<a class="carousel-control-prev atm-career-carousel-prev" href="#key_people" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next atm-career-carousel-next" href="#key_people" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
-</div>
-
-
-	<div class="row mt-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				
-				
-			</div>
 			<div class="row pt-5 justify-content-center">
-				
+				<div id="modal_9" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_four.jpg">
+						</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">MATT CERN</span>
+							<span id="atm_modal_post" class="atm-key-post">GENERAL MANAGER</span>
+						</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
+						</div>
+					</div>
+				</div>
+				<div id="modal_10" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_five.jpg">
+						</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">KEI TERAUCHI</span>
+							<span id="atm_modal_post" class="atm-key-post">ASSISTANT GENERAL MANAGER</span>
+						</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
+						</div>
+					</div>
+				</div>
+				<div id="modal_11" class="col-md-4 image-modal" data-toggle="modal" data-target="#myModal">
+					<div class="card">
+						<div class="card-image">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/key_people_six.jpg">
+						</div>
+						<div class="atm-key-header card-header text-center p-4">
+							<span id="atm_modal_name" class="atm-key-name">CAMERON TYLER</span>
+							<span id="atm_modal_post" class="atm-key-post">LEAD SOMMELIER</span>
+						</div>
+						<div style="display: none;">
+						<span id="atm_modal_fb_link">www.facebook.com/</span>
+						<span id="atm_modal_tw_link">www.twitter.com/</span>
+						<span id="atm_modal_in_link">www.instagram.com/</span>
+						<p id="atm_modal_body">Michael Tusk is the Chef and Owner, along with his wife Lindsay, of two of San Francisco’s most critically acclaimed restaurants, Quince and Cotogna. His approach to Italian and French regional cuisine is refined and modern, taking inspiration from the seasonal bounty of Northern California and his close relationships with local purveyors.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
