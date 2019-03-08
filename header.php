@@ -8,7 +8,6 @@
 
 	<title><?php echo get_bloginfo(' name '); ?></title>
 
-	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
 <?php wp_head(); ?>

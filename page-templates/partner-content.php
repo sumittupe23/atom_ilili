@@ -8,7 +8,7 @@ get_header();
 <!-- Banner Image -->
 
 <section class="container-fluid revealable" style="padding: 80px 0 0 0;">
-	<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/storybanner.jpg">
+	<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/partnerbanner.jpg">
 </section>
 
 <!-- Become a partner -->

@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <section class="container-fluid revealable" style="padding: 80px 0 0 0;">
-    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/storybanner.jpg">
+    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/peoplebanner.jpg">
 </section>
 <!-- Directors -->
 <div class="container">
@@ -65,7 +65,7 @@ get_header();
 </div>
 
 <section class="container p-5 revealable" style="padding: 80px 0 0 0;">
-	<h1 class="text-center">OUR DIRECTORS</h1><hr class="custom_hr">
+	<h1 class="text-center">DIRECTORS</h1><hr class="custom_hr">
 	<div class="row mt-5" style="background-color: rgba(255,255,255,1); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);">
 		<div class="container p-5">
 			<div class="row justify-content-center">
@@ -158,7 +158,7 @@ get_header();
 
 <!-- Key People -->
 <section class="container p-5 revealable">
-	<h1 class="text-center">KEY PEOPLE</h1><hr class="custom_hr">
+	<h1 class="text-center">Core Team</h1><hr class="custom_hr">
 	<div class="row mt-5">
 		<div class="container">
 			<div class="row justify-content-center">

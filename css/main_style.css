@@ -1,24 +1,13 @@
-@import url(//db.onlinewebfonts.com/c/78d7bdc55148aaa3307a1e8ad735c40f?family=Goudy+Old+Style);
-@import url(//db.onlinewebfonts.com/c/1fcf6e20e04d591ed9f8427322ad78ae?family=Cinzel);
+/* Headlines Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
 
-@font-face {font-family: "Goudy Old Style";
-    src: url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.eot");
-    src: url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/78d7bdc55148aaa3307a1e8ad735c40f.svg#Goudy Old Style") format("svg");
-}
+/* Body Fonts */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700');
 
-@font-face {font-family: "Cinzel";
-    src: url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.eot");
-    src: url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/1fcf6e20e04d591ed9f8427322ad78ae.svg#Cinzel") format("svg");
-}
+/* Form / Menu Button Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,500i,600,700,800');
 
+/* Font Awesome icons Link */
 @font-face {
   font-family: "FontAwesome";
   src: url("https://theme-assets.getbento.com/sensei/889bbbc.sensei/assets/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("https://theme-assets.getbento.com/sensei/889bbbc.sensei/assets/fonts/font-awesome/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("https://theme-assets.getbento.com/sensei/889bbbc.sensei/assets/fonts/font-awesome/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("https://theme-assets.getbento.com/sensei/889bbbc.sensei/assets/fonts/font-awesome/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("https://theme-assets.getbento.com/sensei/889bbbc.sensei/assets/fonts/font-awesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
@@ -26,22 +15,15 @@
   font-weight: normal;
 }
 
-@font-face {
-    font-family: "hum";
-    src: url('../fonts/HUM521L.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
 	margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
-    font-family: 'Arno';
+    font-family: 'Crimson Text', serif;
     font-size: 1rem;
     line-height: 1.25;
     color: rgba(0,0,0,0.9);
-    background-color: #fcf8f4;
+    background-color: #fcf8f4; 
 }
 
 html, body {
@@ -50,8 +32,8 @@ html, body {
 }
 
 h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Cinzel';
-    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -67,15 +49,15 @@ h2 {
 }
 
 h2, .h2 {
-    font-family: 'Cinzel';
+    font-family: 'Cinzel', serif;
     color: #000;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 h3, .h3 {
-    font-family: 'Cinzel';
-    font-weight: 300;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
     text-transform: none;
 }
 

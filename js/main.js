@@ -1,6 +1,11 @@
-baguetteBox.run('.tz-gallery');
+baguetteBox.run('.tz-gallery', {
+	animation: 'fadeIn',
+	captions: function(element) {
+        return element.getElementsByTagName('img')[0].alt;
+    }
+});
 
-
+// People's page modal
 $('*').on('click', function(ev){
 	$( '#modal_main' ).on('click', function(even){ even.stopPropagation(); });
 
@@ -30,4 +35,20 @@ $('*').on('click', function(ev){
 
 	});
 
+});
+
+// Location Map Popovers
+$(function () {
+  $('#uaepopoverData').popover({
+  	trigger: 'hover'
+  });
+  $('#canpopoverData').popover({
+  	trigger: 'hover'
+  });
+  $('#indpopoverData').popover({
+  	trigger: 'hover'
+  });
+  $('#popoverData').popover({
+  	trigger: 'hover'
+  });
 });

@@ -15,18 +15,15 @@
                 ((''+month[n]).length<2 ? ', 0' : ', ') + month[n]
                 + ' ' + d.getFullYear();
 
-    // console.log(output);
-
     (function($) {
 
         var $date_dd = $('[name="atm-date"]');
 
         // create references to the 3 dropdown fields for later use.
 
-        var $makes_dd = $('[name="makes"]');
-        var $models_dd = $('[name="models"]');
-        var $years_dd = $('[name="years"]');
-
+        // var $makes_dd = $('[name="makes"]');
+        // var $models_dd = $('[name="models"]');
+        // var $years_dd = $('[name="years"]');
 
         // run the populate_fields function, and additionally run it every time a value changes
 
@@ -35,7 +32,7 @@
             populate_fields();
         });
 
-         $('#atm-date-menu').change(function(){ populate_fields(); });
+        $('#atm-date-menu').change(function(){ populate_fields(); });
 
         function populate_fields() {
 
@@ -43,48 +40,47 @@
 
                 // action needs to match the action hook part after wp_ajax_nopriv_ and wp_ajax_ in the server side script.
 
-                'action' : 'cf7_populate_values', 
+                'action' : 'cf7_populate_values',
 
-                // pass all the currently selected values to the server side script.
-
-                'make' : $makes_dd.val(),
-                'model' : $models_dd.val(),
-                'year' : $years_dd.val(),
+                // 'make' : $makes_dd.val(),
+                // 'model' : $models_dd.val(),
+                // 'year' : $years_dd.val(),
                 'output' : $date_dd.val()
-            };
+			};
 
-            // call the server side script, and on completion, update all dropdown lists with the received values.
+		// call the server side script, and on completion, update all dropdown lists with the received values.
 
             $.post('<?php echo admin_url( 'admin-ajax.php' ) ?>', data, function(response) {
                 all_values = response;
 
-                $makes_dd.html('').append($('<option>').text(' -- Choose Brand -- '));
-                $models_dd.html('').append($('<option>').text(' -- Choose Country  -- '));
-                $years_dd.html('').append($('<option>').text(' -- Choose City -- '));
+                // $makes_dd.html('').append($('<option>').text(' -- Choose Brand -- '));
+                // $models_dd.html('').append($('<option>').text(' -- Choose Country  -- '));
+                // $years_dd.html('').append($('<option>').text(' -- Choose City -- '));
                 $date_dd.html('').append($('<option>').text(output));
 
-                $.each(all_values.makes, function() {
-                    $option = $("<option>").text(this).val(this);
-                    if (all_values.current_make == this) {
-                        $option.attr('selected','selected');
-                    }
-                    $makes_dd.append($option);
-                });
-                $.each(all_values.models, function() {
-                    $option = $("<option>").text(this).val(this);
-                    if (all_values.current_model == this) {
-                        $option.attr('selected','selected');
-                    }
-                    $models_dd.append($option);
-                });
-                $.each(all_values.years, function() {
-                    $option = $("<option>").text(this).val(this);
-                    if (all_values.current_year == this) {
-                        $option.attr('selected','selected');
-                    }
-                    $years_dd.append($option);
-                });
-            },'json');
+                // $.each(all_values.makes, function() {
+                //     $option = $("<option>").text(this).val(this);
+                //     if (all_values.current_make == this) {
+                //         $option.attr('selected','selected');
+                //     }
+                //     $makes_dd.append($option);
+                // });
+                // $.each(all_values.models, function() {
+                //     $option = $("<option>").text(this).val(this);
+                //     if (all_values.current_model == this) {
+                //         $option.attr('selected','selected');
+                //     }
+                //     $models_dd.append($option);
+                // });
+                // $.each(all_values.years, function() {
+                //     $option = $("<option>").text(this).val(this);
+                //     if (all_values.current_year == this) {
+                //         $option.attr('selected','selected');
+                //     }
+                //     $years_dd.append($option);
+                // });
+
+            }, 'json');
         }
 
     })( jQuery );

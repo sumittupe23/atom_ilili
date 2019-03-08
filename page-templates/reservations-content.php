@@ -7,11 +7,11 @@ get_header();
 
 <!-- Reservations Container -->
 
-<div class="atm-reserve container-fluid revealable" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/reservations.jpg');">
+<div class="atm-reserve container-fluid revealable" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/reservationsfoodpicture.jpg');">
     <div class="row">
         <div class="col-5 offset-7 text-left">
             <h1>Reservations</h1>
-            <span>We're happy to have you join us at your favorite SK restaurant. Please keep in mind we can only hold tables for up to 15 minutes past your reservation time. Whatever your event or celebration, we are here to make your special day a truly memorable one!</span>
+            <span>We're happy to have you join us at your favourite SK Restaurant. Kindly fill in the details below and wait for a response from our side. We shall soon get back to you with a confirmation.</span>
         </div>
     </div>
     <div class="row">

@@ -53,6 +53,7 @@
 }
 
 .atm-nav {
+    font-family: 'Raleway', serif;
     flex-grow: 0;
     background: rgba(255,255,255,.8);
     text-transform: uppercase;
@@ -66,6 +67,7 @@
 }
 
 .atm-btn {
+    font-family: 'Raleway', serif;
     line-height: 1;
     padding: .5rem 1rem !important;
     border-radius: 0;
@@ -90,7 +92,7 @@
 }
 
 .atm-btn-brand {
-    font-family: 'Cinzel';
+    font-family: 'Raleway', serif;
     color: #fff;
     background-color: #000;
     border-color: #000;
@@ -107,6 +109,7 @@
 }
 
 .atm-bot-nav {
+    font-family: 'Raleway', serif;
     flex-grow: 0;
     text-transform: uppercase;
     line-height: 1;
@@ -119,8 +122,9 @@
 }
 
 .atm-sticky-bot-nav {
+    font-family: 'Raleway', serif;
     background-color: #000;
-    padding: 1rem 2rem;
+    padding: 0.2rem 2rem;
 }
 
 .atm-bot-nav a {
@@ -134,18 +138,20 @@
 .atm-sticky-bot-nav .atm-icon {
     background-color: rgba(0,0,0,1);
     border-radius: 50%;
+    -webkit-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
 }
 
 .atm-sticky-bot-nav .fb {
-    padding: .2rem .3rem .2rem .5rem;
+    padding: .2rem .2rem .2rem .5rem;
 }
 
 .atm-sticky-bot-nav .tw {
-    padding: .2rem .15rem .2rem .45rem;
+    padding: .2rem .05rem .2rem .4rem;
 }
 
 .atm-sticky-bot-nav .in {
-    padding: .2rem .35rem .2rem .45rem; 
+    padding: .2rem .1rem .25rem .5rem;
 }
 
 .atm-sticky-bot-nav .atm-icon:hover {
@@ -163,25 +169,27 @@
 .atm-bottom-nav {
     width: 100%;
     color: #fff;
-    background-color: #000;
+    background-color: #765e36;
     letter-spacing: .05rem;
     word-wrap: break-word;
 }
 
-.atm-bottom-nav-address > h3 {
+.atm-bottom-nav-social, .atm-bottom-nav-news {
     text-align: left;
 }
 
-.atm-bottom-nav-social, .atm-bottom-nav-news {
-    text-align: center;
-}
-
 .atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
-    font-family: 'Goudy Old Style';
+    font-family: 'Crimson Text', serif;
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 1rem;
+}
+
+.atm-bottom-nav-address > h3 {
+    font-size: 2rem;
+    text-transform: none;
+    text-align: left;
 }
 
 .atm-about-section-top {
@@ -190,23 +198,33 @@
 }
 
 .atm-about-section-top h3 {
-    font-family: 'Goudy Old Style';
+    font-family: 'Crimson Text', serif;
     font-size: 1.35rem;
-    font-weight: 200;
+    font-style: italic;
 }
 
 .atm-bottom-nav-copy {
     font-size: .8rem;
     font-weight: 100;
-    text-align: center;
-    margin: 2rem 0rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.atm-bottom-nav-copy span {
+    font-size: 1.25rem;
+    line-height: 2;
 }
 
 .atm-btn-brand-alt {
-    font-family: 'Cinzel';
+    font-family: '';
     color: #333;
     background-color: #fff;
     border-color: #333;
+}
+
+.atm-nl-email {
+    border-bottom: 1px solid #fff !important;
+    width: 100% !important;
 }
 
 /* Brands Division Section */
@@ -354,12 +372,13 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    font-family: 'Cinzel';
+    font-family: '';
     color: #000;
     border-bottom-color: #000;
 }
 
 .atm-c-btn {
+    font-family: 'Raleway', serif;
     line-height: 1;
     padding: 0.5rem 1rem 0.5rem !important;
     border-radius: 0;
@@ -442,10 +461,12 @@
     text-align: left;
 }
 
-.atm-updates, .row, .col span {
-    font-family: 'hum', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
+.atm-updates span {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #b58b3c;
 }
 
 .atm-updates hr {
@@ -482,15 +503,15 @@
 }
 
 .atm-card-body h3 {
-    font-family: 'Goudy Old Style';
+    font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     text-transform: uppercase;
 }
 
-.atm-card-body span {
-    font-family: 'Goudy Old Style';
+.atm-card-body h6 {
+    font-family: 'Crimson Text', serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -499,15 +520,15 @@
 }
 
 .atm-restro-count h1 {
-    font-family: 'Goudy Old Style';
+    font-family: 'Cinzel', serif;
     font-size: 2.75rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .atm-restro-count h4 {
-    font-family: 'Goudy Old Style';
+    font-family: 'Raleway', serif;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* Lightbox Gallery CSS */
@@ -537,7 +558,6 @@
     background-color: transparent !important;
 }
 
-
 @media(max-width: 768px) {
     body {
         padding: 0;
@@ -552,7 +572,7 @@
 
 #atm-btn-back-to-top {
   display: inline-block;
-  background-color: #FF9800;
+  /*background-color: #FF9800;*/
   width: 50px;
   height: 50px;
   text-align: center;
@@ -564,7 +584,7 @@
     opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 #atm-btn-back-to-top::after {
@@ -574,16 +594,16 @@
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: #765e36;
 }
 
 #atm-btn-back-to-top:hover {
   cursor: pointer;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 
 #atm-btn-back-to-top:active {
-  background-color: #555;
+  /*background-color: #555;*/
 }
 
 #atm-btn-back-to-top.show {
@@ -661,6 +681,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 80px 0;
+    background-position: top center;
 }
 
 .atm-reserve h1 {
@@ -678,14 +699,14 @@
 .atm-res-form {
     padding: 3.5rem 1rem 0 1rem;
     font-size: 0.9rem;
-    font-family: 'hum', sans-serif;
+    font-family: '';
     font-weight: 100;
     letter-spacing: 0.01rem;
 }
 
 .input_field {
     background-color: transparent;
-    font-family: 'hum', sans-serif;
+    font-family: '';
     border-bottom: 0.5px solid #d1d3d4;
     padding-bottom: 0.5rem;
     font-weight: 100;
@@ -709,9 +730,9 @@
 
 /* Franchise Form Design */
 .atm-fr-form {
-    padding: 1rem;
+    /*padding: 1rem;*/
     font-size: 0.8rem;
-    font-family: 'hum', sans-serif;
+    font-family: 'Raleway', serif;
     font-weight: 100;
     letter-spacing: 0.01rem;
     color: #000;
@@ -719,7 +740,7 @@
 
 .input_field_fr {
     background-color: transparent;
-    font-family: 'hum', sans-serif;
+    font-family: 'Raleway', serif;
     border: 0.5px solid #000;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -728,7 +749,7 @@
 
 .radio_field_fr {
     background-color: transparent;
-    font-family: 'hum', sans-serif;
+    font-family: 'Raleway', serif;
     padding: 0.5rem;
     margin: 0.5rem;
     font-weight: 200;
@@ -741,7 +762,7 @@
 /* Upcoming Events Design */
 
 .atm-events {
-    font-family: 'Arno';
+    font-family: 'Crimson Text', serif;
     font-weight: 400;
     color: #414042;
     line-height: 1.8rem;
@@ -753,13 +774,13 @@
 
 .atm-events h4 {
     padding-top: 2rem;
-    font-family: 'Arno';
+    font-family: 'Crimson Text', serif;
     color: #b58b3c;
     font-style: italic;
 }
 
 .atm-events h6 {
-    font-family: 'Arno';
+    font-family: 'Crimson Text', serif;
     line-height: 3rem;
 }
 
@@ -789,13 +810,15 @@
 /* People Page Design */
 
 .atm-dir-name {
+    font-family: 'Crimson Text', serif;
     padding: 10px 0 5px 0;
-    font-size: 0.85rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .atm-dir-post {
-    font-weight: bold;
+    font-family: 'Raleway', serif;
+    font-weight: 500;
     color: rgba(0,0,0,0.6);
     font-size: 0.85rem;
 }
@@ -812,16 +835,18 @@
 }
 
 .atm-key-name {
+    font-family: 'Crimson Text', serif;
     display: block;
     padding: 0 0 5px 0;
     font-size: 1.25rem;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
     color: #000;
 }
 
 .atm-key-post {
+    font-family: 'Raleway', serif;
     display: block;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -844,12 +869,16 @@ div.accordion .card .card-header > a::after {
     font-family: "FontAwesome";
     content: "\f068";
     float: right;
+    font-size: x-small;
+    line-height: 3;
 }
 
 div.accordion .card .card-header > a.collapsed::after{
     font-family: "FontAwesome";
     content: "\f067";
     float: right;
+    font-size: x-small;
+    line-height: 3;
 }
 
 .image-modal {
@@ -898,4 +927,189 @@ div.accordion .card .card-header > a.collapsed::after{
 .atm-modal-body {
     text-align: justify;
     font-size: 0.85rem;
+}
+
+/* Careers Page */
+
+.atm-career-banner {
+    color: #fff;
+    padding: 4rem 4.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px 0;
+}
+
+.atm-career-banner h2 {
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.atm-career-banner h3 {
+    font-size: 1.5rem;
+}
+
+/* Create a custom radio button */
+
+.input-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.input-container ul li{
+  color: #b58b3c;
+  display: block;
+  position: relative;
+  float: left;
+  width: 80%;
+  height: 50px;
+}
+
+.input-container ul li input[type=radio]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.input-container ul li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 7px 0 0 0;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    top: -10px;
+    left: 25px;
+    width: 65%;
+}
+
+.input-container ul li:hover label{
+    color: #fff;
+}
+
+.input-container ul li .check{
+    display: block;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.input-container ul li:hover .check {
+  border: 2px solid #FFFFFF;
+}
+
+.input-container ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    top: 1px;
+    left: 1px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 2px solid #fff;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #b58b3c;
+}
+
+/* Careers Page Search Box Design */
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+    float: left;
+    width: 80%;
+    padding: 5px;
+    height: 35px;
+    outline: none;
+}
+
+.searchTerm:focus{
+    color: #b58b3c;
+}
+
+.searchButton {
+    border: 1px solid #b58b3c;
+    position: absolute;
+    right: -65px;
+    width: 150px;
+    height: 35px;
+    background-color: #b58b3c;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.searchButton::after {
+    content: 'FIND JOBS'
+}
+
+/* Design work with us section */
+
+.atm-with-us h1, .atm-life-skr h1 {
+    font-size: 1.5rem;
+}
+
+.atm-with-us h4 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 200;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #b58b3c;
+}
+
+.atm-with-us hr, .atm-life-skr hr {
+    height: 100%;
+    width: 20%;
+    border-top: 2px solid;
+}
+
+.atm-with-us span {
+    font-size: 1.25rem;
+}
+
+/* Location Map Beacon */
+
+.beacon{
+    background-color:#2c3e50;
+    height:0.5em;
+    width:0.5em;
+    border-radius:50%;
+    -webkit-transform:translateX(-50%) translateY(-50%);
+}
+.beacon:before{
+    position:absolute;
+    content:"";
+    height:0.5em;
+    width:0.5em;
+    left:0;
+    top:0;
+    background-color:transparent;
+    border-radius:50%;
+    box-shadow:0px 0px 2px 2px #2980b9;
+    -webkit-animation:active 2s infinite linear;
+    animation:active 2s infinite linear;
 }
