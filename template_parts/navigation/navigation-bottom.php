@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg">
   <!-- Sticky bottom nav bar -->
-  <div id="sticky-bottom" class="container-fluid fixed-bottom atm-sticky-bot-nav">
-    <div class="">
+  <div id="sticky-bottom" class="container-fluid fixed-bottom atm-sticky-bot-nav text-center justify-content-center">
+    <div class="atm-md-footer">
       <a class="atm-icon fb" href="https://www.facebook.com/SKRestaurants/" target="_blank">
         <span class="fa fa-facebook"></span>
       </a>
@@ -13,7 +13,7 @@
       </a>
 
       <!-- <div class="atm-bottom-nav-copy"> -->
-      <span class="px-3" style="font-size: 0.85rem; color: #fff;">&copy; 2019 SK Restaurants Pvt. Ltd.</span>
+      <span class="px-3 atm-bottom-nav-copyright">&copy; 2019 SK Restaurants Pvt. Ltd.</span>
       
     </div>
 
@@ -24,7 +24,7 @@
     $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
     ?>
 
-    <div id="navbarsExample07" class="atm-bot-nav collapse navbar-collapse">
+    <div id="navbarsExample08" class="atm-bot-nav">
           <ul class="navbar-nav mr-auto">
             <?php
             $count = 0;

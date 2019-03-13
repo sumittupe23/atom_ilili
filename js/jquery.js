@@ -1,21 +1,6 @@
-// (function($) {
-
-
-
-//     })( jQuery );
-
 $(document).ready(function() {
 
-// Custom Animations on page load sections
-
-
-
-// Force the page to scroll top after the reload
-// $(this).scrollTop(0);
-
 var atm_btn = $('#atm-btn-back-to-top');
-// Redirects the page continously
-// var res_href = $(location).attr('href', '?a=b');
 var res_href = window.location;
 
 if ( res_href != "http://localhost/wordpress/" ) {
@@ -24,17 +9,8 @@ if ( res_href != "http://localhost/wordpress/" ) {
 
 	$(window).scroll(function() {
 
-		// let scrollPos = Math.round(window.scrollY);
-
-		// Code for sticky header element
-		// console.log(res_href);
-		// console.log($(this).scrollTop());
-		
-		// $( 'section' ).addClass( 'revealed' );
-
 		if ( $(this).scrollTop() > 0 || res_href != "http://localhost/wordpress/" ) {
 			$('#sticky').addClass('atm-sticky');
-			// console.log($(this).height());
 		} else {
 			$('#sticky').removeClass('atm-sticky');
 		}
@@ -52,6 +28,8 @@ if ( res_href != "http://localhost/wordpress/" ) {
 	});
 
 var $revealable = $('.revealable');
+var $slideup = $('.atmslideup');
+var $slidedown = $('.atmslidedown');
 var $window = $(window);
 
 function check_if_in_view() {
@@ -72,6 +50,32 @@ function check_if_in_view() {
 			$element.removeClass( 'revealed' );
 		}
 	});
+	$.each( $slideup, function(){
+		var $element = $(this);
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = ( element_top_position + element_height );
+
+		// Check to see if current container is within viewport
+		if ( (element_bottom_position >= window_top_position) && ( element_top_position <= window_bottom_position ) ) {
+			$element.addClass( 'atmslideupon' );
+		} else {
+			$element.removeClass( 'atmslideupon' );
+		}
+	} );
+	$.each( $slidedown, function(){
+		var $element = $(this);
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = ( element_top_position + element_height );
+
+		// Check to see if current container is within viewport
+		if ( (element_bottom_position >= window_top_position) && ( element_top_position <= window_bottom_position ) ) {
+			$element.addClass( 'atmslidedownon' );
+		} else {
+			$element.removeClass( 'atmslidedownon' );
+		}
+	} );
 }
 
 $window.on( 'scroll resize', check_if_in_view );

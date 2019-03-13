@@ -117,6 +117,11 @@
     font-size: .8rem;
 }
 
+.atm-bot-nav .navbar-nav .nav-item .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .atm-bot-nav a:hover {
     color: rgba(252,248,244,0.7);
 }
@@ -124,7 +129,7 @@
 .atm-sticky-bot-nav {
     font-family: 'Raleway', serif;
     background-color: #000;
-    padding: 0.2rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .atm-bot-nav a {
@@ -143,15 +148,15 @@
 }
 
 .atm-sticky-bot-nav .fb {
-    padding: .2rem .2rem .2rem .5rem;
+    padding: .5rem .4rem .4rem .7rem;
 }
 
 .atm-sticky-bot-nav .tw {
-    padding: .2rem .05rem .2rem .4rem;
+    padding: .5rem .15rem .4rem .6rem;
 }
 
 .atm-sticky-bot-nav .in {
-    padding: .2rem .1rem .25rem .5rem;
+    padding: .5rem .25rem .45rem .7rem;
 }
 
 .atm-sticky-bot-nav .atm-icon:hover {
@@ -169,7 +174,7 @@
 .atm-bottom-nav {
     width: 100%;
     color: #fff;
-    background-color: #765e36;
+    background-color: #28211f;
     letter-spacing: .05rem;
     word-wrap: break-word;
 }
@@ -179,7 +184,7 @@
 }
 
 .atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -193,14 +198,12 @@
 }
 
 .atm-about-section-top {
-    text-align: center;
-    padding: 4rem 10rem;
+    text-align: justify;
 }
 
 .atm-about-section-top h3 {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.35rem;
-    font-style: italic;
+    font-family: 'Alice', serif;
+    font-size: 1.25rem;
 }
 
 .atm-bottom-nav-copy {
@@ -208,6 +211,12 @@
     font-weight: 100;
     text-align: left;
     margin-bottom: 0.5rem;
+}
+
+.atm-bottom-nav-copyright {
+    font-family: 'open-sans', sans-serif;
+    font-size: 0.75rem;
+    color: #fff;
 }
 
 .atm-bottom-nav-copy span {
@@ -225,6 +234,8 @@
 .atm-nl-email {
     border-bottom: 1px solid #fff !important;
     width: 100% !important;
+    line-height: 2 !important;
+    color: #fff !important;
 }
 
 /* Brands Division Section */
@@ -320,7 +331,7 @@
 }
 
 .atm-c-split__content {
-    max-width: 90%;
+    max-width: 80%;
     background: rgba(255, 255, 255, 0.8);
     padding: 3rem 3rem 2rem;
     box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
@@ -334,8 +345,8 @@
 }
 
 .atm-c-split__content p {
-    font-size: .8rem;
-    text-align: left;
+    font-size: .95rem;
+    text-align: justify;
 }
 
 .atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
@@ -451,18 +462,13 @@
 .error-actions .btn { margin-right:10px; }
 
 .atm-updates {
-    font-size: 1.5rem;
     width: 80%;
     text-align: center;
     margin: 0 auto;
 }
 
-.atm-updates, .row h2 {
-    text-align: left;
-}
-
 .atm-updates span {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-weight: 400;
     font-size: 1.25rem;
     font-style: italic;
@@ -509,10 +515,11 @@
 }
 
 .atm-card-body h6 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .atm-restro-count {
@@ -520,7 +527,7 @@
 }
 
 .atm-restro-count h1 {
-    font-family: 'Cinzel', serif;
+    font-family: 'open-sans', sans-serif;
     font-size: 2.75rem;
     font-weight: 400;
 }
@@ -578,7 +585,7 @@
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 30px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
@@ -658,7 +665,7 @@
 }
 
 .atm-about-carousel-indicator {
-    top: 100%;
+    top: 50%;
     left: -75%;
 }
 
@@ -740,7 +747,7 @@
 
 .input_field_fr {
     background-color: transparent;
-    font-family: 'Raleway', serif;
+    font-family: 'open-sans', sans-serif;
     border: 0.5px solid #000;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -762,7 +769,7 @@
 /* Upcoming Events Design */
 
 .atm-events {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-weight: 400;
     color: #414042;
     line-height: 1.8rem;
@@ -774,13 +781,13 @@
 
 .atm-events h4 {
     padding-top: 2rem;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     color: #b58b3c;
     font-style: italic;
 }
 
 .atm-events h6 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     line-height: 3rem;
 }
 
@@ -802,18 +809,40 @@
     transform: translateY(0px);
 }
 
+.atmslideup {
+    -webkit-transition: 2.5s ease all;
+    transition: 2.5s ease all;
+    transform: translateY(60px);
+}
+
+.atmslideupon {
+    transform: translateY(0px);
+}
+
+.atmslidedown {
+    -webkit-transition: 2.5s ease all;
+    transition: 2.5s ease all;
+    transform: translateY(-60px);
+}
+
+.atmslidedownon {
+    transform: translateY(0px);
+}
+
 /* Location Map Design */
 .atm-loc-map {
-    background-color: #fff;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);
 }
 
 /* People Page Design */
 
 .atm-dir-name {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     padding: 10px 0 5px 0;
     font-size: 1rem;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .atm-dir-post {
@@ -835,10 +864,10 @@
 }
 
 .atm-key-name {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     display: block;
     padding: 0 0 5px 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -849,7 +878,7 @@
     font-family: 'Raleway', serif;
     display: block;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgba(0,0,0,0.6);
 }
 
@@ -860,7 +889,7 @@
 
 .atm-accord-card .card-header {
     background-color: transparent;
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 2px solid #e2e2e2;
 }
 
 /* Accordian Icon Toggle */
@@ -1074,7 +1103,7 @@ input[type=radio]:checked ~ .check::before{
 }
 
 .atm-with-us h4 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-weight: 200;
     font-size: 1.15rem;
     font-style: italic;

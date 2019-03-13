@@ -7,7 +7,7 @@ get_header();
 
 <!-- About Section -->
 
-<section class="container-fluid revealable" style="padding: 80px 0 0 0;">
+<section class="container-fluid revealable atm-header">
     <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/storybanner.jpg">
 </section>
 <section class="atm-c-split atm-c-split--vcenter atm-c-split--alternate revealable">
@@ -48,53 +48,81 @@ get_header();
 
 <section class="container-fluid revealable">
     <div class="row justify-content-center">
-        <div class="col-8">
-            <h1 class="text-center">The finest</h1><hr>
-            <span>Being the brainchild of Master Chef Sanjeev Kapoor, it is quite obvious that SK Restaurants stands for and delivers the best – be it food, ambience, hospitality, etc. So, it goes without saying that each of our brands is designed according to the segment they fall under with utmost perfection and finesse. The best of interiors, state-of-art kitchens with latest technologies, freshest of ingredients and highest standards in service are pretty much the hallmark of each chain.</span>
+        <div class="atm-updates col-8 col-sm-5 col-md-3">
+            <h2>The finest</h2>
         </div>
     </div>
-    <div class="row justify-content-center my-5">
-        <div class="col-md-3">
-            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_one.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_two.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-            <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/hospitality_three.jpg" alt="">
+    <div class="pt-3 row justify-content-center">
+        <div class="col-8 text-justify atm-about-section-top">
+            <h3>Being the brainchild of Master Chef Sanjeev Kapoor, it is quite obvious that SK Restaurants stands for and delivers the best – be it food, ambience, hospitality, etc. So, it goes without saying that each of our brands is designed according to the segment they fall under with utmost perfection and finesse. The best of interiors, state-of-art kitchens with latest technologies, freshest of ingredients and highest standards in service are pretty much the hallmark of each chain.</h3>
         </div>
     </div>
+    <?php echo do_shortcode("[atm_tools id='14546' /]"); ?>
 </section>
 
 <!-- the world on a plate -->
-<section class="container-fluid revealable">
+<section class="mb-lg-5 container-fluid revealable atm-location-map">
     <div class="row justify-content-center">
-        <div class="col-8">
-            <h1 class="text-center">the world on a plate</h1><hr>
-            <span>With 82 restuarants in 50 cities  SK Restaurants offers Every dish at SKR has it's own story from the traditional Indian recipes to modern updates that tell the history of our team, of our cooks and chefs who have left their mark on our kitchen.</span>
+        <div class="atm-updates col-8 col-lg-6 col-xl-5">
+            <h2>the world on a plate</h2>
+        </div>
+    </div>
+    <div class="pt-3 row justify-content-center">
+        <div class="col-8 text-justify atm-about-section-top">
+            <h3>With 82 restuarants in 50 cities  SK Restaurants offers Every dish at SKR has it's own story from the traditional Indian recipes to modern updates that tell the history of our team, of our cooks and chefs who have left their mark on our kitchen.</h3>
         </div>
     </div>
 
-    <div class="row justify-content-center py-5">
-        <div class="col-md-8">
-            <div class="atm-loc-map row justify-content-between">
-            <!--<div class="col-md-2 revealable">
-                    <img class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/fork.png" alt="">
-                </div>data-content="The Yellow Chilli &#010; Hong Kong"
-                <div class="col-md-2 revealable">
-                    <img class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/spoon.png" alt="">
-                </div> -->
-                <span id="uaepopoverData" class="beacon" style="position:absolute; top:51%; left:57%; cursor: url('<?php echo get_bloginfo('template_directory'); ?>/assets/chef_caricature_cursor.png'), auto;" animation="true" data-content="<center>The Yellow Chilli <br> Hong Kong</center>" rel="popover" data-placement="top" data-html="true"></span>                
-                <span id="canpopoverData" class="beacon" style="position:absolute; top:40%; left:32%; cursor: url('<?php echo get_bloginfo('template_directory'); ?>/assets/chef_caricature_cursor.png'), auto;" animation="true" data-content="<center>The Yellow Chilli <br> Hong Kong</center>" rel="popover" data-placement="top" data-html="true"></span>
-                <span id="indpopoverData" class="beacon" style="position:absolute; top:52%; left:61%; cursor: url('<?php echo get_bloginfo('template_directory'); ?>/assets/chef_caricature_cursor.png'), auto;" animation="true" data-content="<center>The Yellow Chilli <br> Suravie <br> Grain of Salt</center>" rel="popover" data-placement="top" data-html="true"></span>
-                <span id="popoverData" class="beacon" style="position:absolute; top:45%; left:32%; cursor: url('<?php echo get_bloginfo('template_directory'); ?>/assets/chef_caricature_cursor.png'), auto;" animation="true" data-content="<center>The Yellow Chilli</center>" rel="popover" data-placement="top" data-html="true"></span>
-                <img class="img-fluid" style="height: 780px;" src="<?php echo get_bloginfo('template_directory'); ?>/assets/locationmap.jpg" alt="SKRPL Location Map">
+    <div class="row justify-content-center py-5 no-gutters">
+        <div class="atm-loc-map col-md-8 pb-4">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-1 atmslideup">
+                        <div class="pt-5 container-fluid no-gutters">
+                            <div class="pb-3 row justify-content-center">
+                                <span>10</span><span>Countries</span>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12" style="padding: 0;">
+                                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/fork.png" alt="Fork">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 atmslidedown">
+                        <div class="container-fluid">
+                            <div class="row justify-content-start no-gutters">
+                                <div class="col-12">
+                                    
+                                    <div id="image_map">
+                                        <map name="map_example">
+                                            <area href="www.google.com" alt="Google" title="Google" target="_blank" shape="circle" coords="1,1,NaN">
+                                        </map>
+                                        
+                                        <img class="img-fluid atm-location-plate" src="<?php echo get_bloginfo('template_directory'); ?>/assets/worldmap_plate.png" alt="SKRPL Location Map" usemap="#map_example">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 atmslideup">
+                        <div class="pt-5 container-fluid no-gutters">
+                            <div class="pb-3 row justify-content-center">
+                                <span>83</span><span>Restaurants</span>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12" style="padding: 0;">
+                                    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/spoon.png" alt="Spoon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Gallery Section -->
-<?php echo do_shortcode("[atm_tools id='14349' /]"); ?>
 
 <?php get_footer(); ?>

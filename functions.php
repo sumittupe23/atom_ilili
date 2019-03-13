@@ -97,15 +97,16 @@ function my_custom_styles() {
 	// My Custom Styles
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0.0' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '1.0.0' );
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main_style.css', array(), '1.0.1' );
-	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom_styles.css', array(), '1.1.1' );
-	wp_enqueue_style( 'bootstrap-element-style', get_template_directory_uri() . '/css/bootstrap_elements_style.css', array(), '1.0.6' );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main_style.css', array(), '1.0.4' );
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom_styles.css', array(), '1.1.4' );
+	wp_enqueue_style( 'custom-style-md', get_template_directory_uri() . '/css/custom_styles_md.css', array(), '1.0.1' );
+	wp_enqueue_style( 'bootstrap-element-style', get_template_directory_uri() . '/css/bootstrap_elements_style.css', array(), '1.0.9' );
 	wp_enqueue_style( 'custom-animations', get_template_directory_uri() . '/css/custom_animations.css', array(), '1.0.0' );
 
 	// My Custom Scripts
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0.1', true );
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.3', true );
-	wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ), '1.0.6', true );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.5', true );
+	wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ), '1.0.9', true );
 }
 
 add_action( 'wp_enqueue_scripts','my_custom_styles' );
@@ -132,17 +133,5 @@ XML-RPC is a method that allows third party apps to communicate with your WordPr
 This could cause security issues and can be exploited by hackers.
 **/
 add_filter( 'xmlrpc_enabled', '__return_false' );
-
-// Dynamic Dropdown for contact form 7 plugin
-
-function ajax_cf7_populate_values() {
-
-}
-
-// These action hooks are needed to tell WordPress that the cf7_populate_values() function needs to be called
-// if a script is POSTing the action : 'cf7_populate_values'
-
-add_action( 'wp_ajax_cf7_populate_values', 'ajax_cf7_populate_values' );
-add_action( 'wp_ajax_nopriv_cf7_populate_values', 'ajax_cf7_populate_values' );
 
 ?>

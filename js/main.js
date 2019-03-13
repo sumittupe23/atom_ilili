@@ -1,3 +1,10 @@
+
+// Navigation Bar Collapse
+$(".navbar-toggler").click(function(event) {
+    $(".navbar-collapse").toggle('in');
+});
+
+// Image Gallery
 baguetteBox.run('.tz-gallery', {
 	animation: 'fadeIn',
 	captions: function(element) {
@@ -37,18 +44,3 @@ $('*').on('click', function(ev){
 
 });
 
-// Location Map Popovers
-$(function () {
-  $('#uaepopoverData').popover({
-  	trigger: 'hover'
-  });
-  $('#canpopoverData').popover({
-  	trigger: 'hover'
-  });
-  $('#indpopoverData').popover({
-  	trigger: 'hover'
-  });
-  $('#popoverData').popover({
-  	trigger: 'hover'
-  });
-});

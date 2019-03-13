@@ -1,3 +1,137 @@
+/**
+* Query classes according to device width for responsiveness on various devices.
+* Device Width Max is Till The Width Below the specified pixels. And for device width below is vice versa
+* Width Below / Till / Max
+* Width Above / From / Min
+**/
+
+/* Between 786px to 992px */
+@media screen and (max-width: 786px) and (min-width: 250px) {
+	.atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
+		height: 25vh;
+	}
+	.atm-c-split--alternate .atm-c-split__col:first-child {
+		left: 0%;
+	}
+	.atm-c-split--alternate .atm-c-split__col:last-child, .atm-c-split__col--empty:last-child {
+		display: none;
+	}
+	.atm-c-split__content {
+		max-width: 90%;
+	}
+	.atm-c-split__col {
+		padding: 0;
+	}
+}
+
+/* Between 786px to 992px */
+@media screen and (max-width: 992px) and (min-width: 786px) {
+	.atm-c-split--alternate .atm-c-split__col:last-child {
+	    left: -53%;
+	}
+	.atm-c-split--alternate .atm-c-split__col:first-child {
+	    left: 45%;
+	}
+	.atm-c-split__content {
+    	max-width: 110%;
+    }
+    .atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
+    	height: 45vh;
+    }
+    .atm-about-carousel-indicator {
+	    top: 75px;
+	}
+}
+
+/* Screen Above 992px */
+@media only screen and ( min-width: 992px ) {
+	.atm-sticky-bot-nav {
+		justify-content: space-between !important;
+	}
+}
+
+/* Screen Below 992px */
+@media only screen and ( max-width: 992px ) {
+	.atm-sticky-bot-nav {
+		position: relative;
+	}
+	.atm-loc-map span {
+    	font-size: 0.75rem;
+	}
+}
+
+/* Screen Below 786px */
+@media only screen and ( max-width: 786px ) {
+	.atm-location-map {
+		display: none;
+	}
+	.atm-header {
+		padding: 60px 0 0 0;
+	}
+	.atm-banner-header {
+		height: 210px;
+		position: relative;
+		top: -20px;
+	}
+	.atm-reserve-header {
+		position: relative;
+		top: -20px;
+	}
+	.atm-about-section-top h3 {
+		font-size: 1rem;
+	}
+	.atm-restro-count h1 {
+		font-size: 2.25rem;
+	}
+	.atm-restro-count h4 {
+		font-size: 1.5rem;
+	}
+	.atm-updates h2 {
+		font-size: 1.5rem;line-height: 2;border-bottom: 1px solid #000;
+	}
+	.atm-card-body h3 {
+		font-size: 1rem;
+	}
+	.atm-card-body h6 {
+		font-size: 0.75rem;
+	}
+	.atm-about-carousel-indicator {
+		top: 125px;
+	}
+}
+
+/* Screen Above 786px */
 @media only screen and ( min-width: 786px ) {
+	.atm-header {
+		padding: 80px 0 0 0;
+	}
+	.atm-banner-header {
+		height: 420px;
+	}
+	.atm-updates h2 {
+		font-size: 2rem;line-height: 2;border-bottom: 1px solid #000;
+	}
+}
+
+/* Screen Below 476px */
+@media only screen and ( max-width: 476px ) {
+	.atm-md-footer {
+		display: block;
+		text-align: center;
+		line-height: 3;
+	}
+	.atm-md-footer > span {
+		display: block;
+	}
+	.atm-banner-header {
+		height: 150px;
+	}
+	.atm-reserve h1 {
+		font-size: 1.25rem;
+	}
+}
+
+/* Screen Above 476px */
+@media only screen and ( min-width: 476px ) {
 	
 }

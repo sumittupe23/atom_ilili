@@ -2,11 +2,13 @@
 
 <!-- About Section -->
 
-<section class="container revealable">
-	<div class="atm-about-section-top">
-		<h3>
-			SK Restaurants is well placed and positioned in Indian and international markets to tap opportunities. It enjoys a robust foundation that supports growth across the business, catalysing revenues and margins, and is optimistic of driving growth in the coming years, through innovation. The Company aims at creating world class culinary experience for its customers through gourmet offerings.
-		</h3>
+<section class="p-5 container revealable">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-10 atm-about-section-top">
+			<h3>
+				SK Restaurants is well placed and positioned in Indian and international markets to tap opportunities. It enjoys a robust foundation that supports growth across the business, catalysing revenues and margins, and is optimistic of driving growth in the coming years, through innovation. The Company aims at creating world class culinary experience for its customers through gourmet offerings.
+			</h3>
+		</div>
 	</div>
 </section>
 <section id="restro_counts" class="atm-c-tout-overlay atm-c-tout-overlay--dimmed revealable" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/restro_counts.jpg');" role="img" aria-label="Ambassadors of Hospitality">
@@ -51,7 +53,7 @@
 				<h2 class="h2 atm-c-split__heading">Pursuit of Perfection</h2>
 				<p>Multiple successful ventures have not kept Master Chef Sanjeev Kapoor away from indulging in his passion as a creator of culinary works of art. With a plethora of restaurants serving innovative and exciting Indian cuisine as well as other popular cuisines from the world, both in India and abroad, SK Restaurants aims to take the vision of Master Chef Sanjeev Kapoor to new heights.</p>
 				<?php echo do_shortcode("[slide-anything id='13505']"); ?>
-				<a href="http://localhost/wordpress/brands/" class="atm-c-btn atm-c-btn-brand-alt">Know More</a>
+				<a href="https://skrestaurants.com/staging/brands/" class="atm-c-btn atm-c-btn-brand-alt">Know More</a>
 			</div>
 		</div>
 	</div>		
@@ -63,61 +65,10 @@
 	</div>
 </section>
 
-<!-- Latest Updates Section -->
-<section class="mt-5 mb-5 container-fluid revealable">
-	<div class="atm-updates">	
-		<div class="row">
-			<div class="col-4"><h2>Updates</h2><hr></div>
-		</div>
-		<div class="row">
-			<div class="col"><span>The inside scoop. Here’s all that’s constantly cooking in our family!</span></div>
-		</div>
-		<div class="mt-5 row justify-content-center">
-			<div class="col-md-5 col-lg-4">
-				<div class="card atm-card">
-				  <div class="atm-img-top">
-				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/14068Philippe_Massoud_001.jpg" alt="Card image cap">
-				  </div>
-
-				  <div class="atm-card-body card-body">
-				  	<h3>The New York Times</h3>
-				    <h6>Q and A: Philippe Massoud</h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-md-5 col-lg-4">
-				<div class="card atm-card">
-				  <div class="atm-img-top">
-				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/72823Single_Dish.jpg" alt="Card image cap">
-				  </div>
-
-				  <div class="atm-card-body card-body">
-				  	<h3>The New York Times</h3>
-				    <h6>Q and A: Philippe Massoud</h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-md-5 col-lg-4">
-				<div class="card atm-card">
-				  <div class="atm-img-top">
-				  	<img class="card-img-top img-fluid" src="https://getbento.imgix.net/accounts/c7b49cc88d1bb3823c4129b95e9fcb71/media/images/48214Our_food.jpg" alt="Card image cap">
-				  </div>
-
-				  <div class="atm-card-body card-body">
-				  	<h3>The New York Times</h3>
-				    <h6>Q and A: Philippe Massoud</h6>
-				  </div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-
-<section class="mt-5 mb-5 container-fluid revealable">
-	<div class="atm-updates">	
-		<div class="row">
-			<div class="col-4"><h2>Updates</h2><hr></div>
+<section class="mb-5 container-fluid revealable">
+	<div class="atm-updates">
+		<div class="row justify-content-center">
+			<div class="col-8 col-sm-4 col-md-3"><h2>Updates</h2></div>
 		</div>
 		<div class="mt-5 row justify-content-center">
 			<?php
@@ -129,7 +80,8 @@
 			<div id="post-<?php the_ID(); ?>" class="col-md-5 col-lg-4">
 				<div class="card atm-card">	
 					<div class="atm-img-top">
-					  	<img class="card-img-top img-fluid" alt="<?php the_title(); ?>" src="<?php the_post_thumbnail(); ?>">
+					  	<!-- <img class="card-img-top img-fluid" alt="<?php the_title(); ?>" src="<?php the_post_thumbnail(); ?>"> -->
+					  	<?php the_post_thumbnail(); ?>
 				  	</div>
 					<div class="atm-card-body card-body text-center">
 					  	<h3><?php the_title(); ?></h3>

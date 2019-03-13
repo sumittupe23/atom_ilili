@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
 
 /* Body Fonts */
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700');
+/*@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700');*/
+@import url('https://fonts.googleapis.com/css?family=Alice&subset=cyrillic,cyrillic-ext');
 
 /* Form / Menu Button Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,500i,600,700,800');
@@ -19,7 +20,7 @@ body {
 	margin: 0;
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Alice', serif;
     font-size: 1rem;
     line-height: 1.25;
     color: rgba(0,0,0,0.9);
@@ -116,20 +117,20 @@ img {
 .fa-facebook {
     content: "";
     color: #fff;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .fa-twitter {
     content: "";
     color: #fff;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .fa-instagram {
     content: "";
     color: #fff;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
