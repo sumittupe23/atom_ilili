@@ -16,7 +16,7 @@ get_header();
     </div>
     <div class="row">
         <div class="col-sm-10 offset-sm-2 offset-md-7 col-md-5 text-justify">
-            <?php echo do_shortcode('[contact-form-7 id="14302" title="Reservations Form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="30" title="Reservations Form"]'); ?>
         </div>
     </div>
 </div>

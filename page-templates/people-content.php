@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <section class="container-fluid revealable atm-header">
-    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/peoplebanner.jpg">
+    <img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/pplbanner.jpg">
 </section>
 <!-- Directors -->
 <div class="container">
@@ -26,7 +26,7 @@ get_header();
       				<img id="atm-modal-image" class="img-fluid" src="">
       				<!-- <?php //echo get_bloginfo('template_directory'); ?>/assets/director_sample.jpg -->
       			</div>
-      			<div class="col-md-6 align-self-center">
+      			<div class="pt-4 pt-md-0 col-md-6 align-self-center">
 			  		<div class="container-fluid">
 			  			<div class="row justify-content-center">
 		      				<h2 id="atm-modal-name" class="atm-modal-name"></h2>
@@ -77,7 +77,7 @@ get_header();
 				<div id="modal_1" class="col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
 					<div class="card atm-card">
 						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/sanjeev_kapoor.jpg">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/sanjeev_kapoor_pic.jpg">
 						</div>
 						<span id="atm_modal_name" class="atm-dir-name text-center">Sanjeev Kapoor</span>
 						<span id="atm_modal_post" class="atm-dir-post text-center"></span>
@@ -103,7 +103,7 @@ get_header();
 				<div id="modal_2" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
 					<div class="card atm-card">
 						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/anant_gawande.jpg">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/anant_gawande_pic.jpg">
 						</div>
 						<span id="atm_modal_name" class="atm-dir-name text-center">Anant Gawande</span>
 						<span id="atm_modal_post" class="atm-dir-post text-center"></span>
@@ -120,7 +120,7 @@ get_header();
 				<div id="modal_3" class="col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
 					<div class="card atm-card">
 						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/harsha_bhatkal.jpg">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/harsha_bhatkal_pic.jpg">
 						</div>
 						<span id="atm_modal_name" class="atm-dir-name text-center">Harsha Bhatkal</span>
 						<span id="atm_modal_post" class="atm-dir-post text-center"></span>
@@ -135,7 +135,7 @@ get_header();
 				<div id="modal_4" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
 					<div class="card atm-card">
 						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/ninad_karpe.jpg">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/ninad_karpe_pic.jpg">
 						</div>
 						<span id="atm_modal_name" class="atm-dir-name text-center">Ninad Karpe</span>
 						<span id="atm_modal_post" class="atm-dir-post text-center"></span>
@@ -150,7 +150,7 @@ get_header();
 				<div id="modal_5" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
 					<div class="card atm-card">
 						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/vinayak_gawande.jpg">
+							<img id="atm_modal_img" class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/vinayak_gawande_pic.jpg">
 						</div>
 						<span id="atm_modal_name" class="atm-dir-name text-center">Vinayak Gawande</span>
 						<span id="atm_modal_post" class="atm-dir-post text-center"></span>
@@ -282,131 +282,6 @@ get_header();
 						</div>
 					</div>
 				</div>
-
-
-				<!-- Team -->
-				<!-- <div class="container m-5"></div>
-				<div id="modal_12" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/priyanka.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Priyanka</span>
-							<span id="atm_modal_post" class="atm-key-post">Content</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				<div id="modal_13" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/nirvi.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Nirvi</span>
-							<span id="atm_modal_post" class="atm-key-post">Legal</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				<div id="modal_14" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/stuti.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Stuti</span>
-							<span id="atm_modal_post" class="atm-key-post">HR</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				<div id="modal_18" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/ashwin.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Ashwin</span>
-							<span id="atm_modal_post" class="atm-key-post">Senior Executive Chef</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="container p-3"></div>
-				<div id="modal_15" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/hemal.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Hemal</span>
-							<span id="atm_modal_post" class="atm-key-post">Accounts</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				<div id="modal_17" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/ankit.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Ankit</span>
-							<span id="atm_modal_post" class="atm-key-post">Creative</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div>
-				<div id="modal_16" class="pt-3 pt-sm-4 pt-md-0 col-md-3 image-modal" data-toggle="modal" data-target="#myModal">
-					<div class="card">
-						<div class="card-image">
-							<img id="atm_modal_img" class="img-fluid" src="<?php //echo get_bloginfo('template_directory'); ?>/assets/rajesh.jpg">
-						</div>
-						<div class="atm-key-header card-header text-center p-4">
-							<span id="atm_modal_name" class="atm-key-name">Rajesh</span>
-							<span id="atm_modal_post" class="atm-key-post">Accounts</span>
-						</div>
-						<div style="display: none;">
-						<span id="atm_modal_fb_link">www.facebook.com/</span>
-						<span id="atm_modal_tw_link">www.twitter.com/</span>
-						<span id="atm_modal_in_link">www.instagram.com/</span>
-						<p id="atm_modal_body"></p>
-						</div>
-					</div>
-				</div> -->
 				
 			</div>
 		</div>

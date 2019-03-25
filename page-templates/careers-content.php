@@ -16,26 +16,23 @@ get_header();
     </div>
 
 	<div class="row justify-content-center text-center">
-		<div class="col-md-3">
-			<!-- <h3>For the love of food</h3> -->
+		<div class="col-9 col-md-6 col-lg-3 p-3 p-md-5">
 			<div class="row justify-content-center p-5">
-				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/love_of_food.png">	
+				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/industry_top_names.png">	
 			</div>
-			<span>For the love of food</span>
+			<span>Top names in the industry as leaders</span>
 		</div>
-		<div class="col-md-3">
-			<!-- <h3>For excellence</h3> -->
+		<div class="col-9 col-md-6 col-lg-3 p-3 p-md-5">
 			<div class="row justify-content-center p-5">
-				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/for_excellence.png">
+				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/career_growth.png">
 			</div>
-			<span>For excellence</span>
+			<span>Well-tailored career growth plan</span>
 		</div>
-		<div class="col-md-3">
-			<!-- <h3>For a progressive well being</h3> -->
+		<div class="col-9 col-md-6 col-lg-3 p-3 p-md-5">
 			<div class="row justify-content-center p-5">
-				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/well_being.png">
+				<img class="img-fluid" src="<?php echo get_bloginfo('template_directory'); ?>/assets/master_culinary_art.png">
 			</div>
-			<span>For a progressive well being</span>
+			<span>One of the best place to master culinary art</span>
 		</div>
 	</div>
 </section>
@@ -125,10 +122,10 @@ get_header();
 			</div>
 
 		</div>
-		<div class="mb-5 mb-xl-0 col-10 col-lg-6 p-5" style="background-color: rgba(255,255,255,1); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);">
+		<div class="mb-5 mb-xl-0 col-10 col-lg-6 p-3 p-lg-5" style="background-color: rgba(255,255,255,1); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);">
 			<h1 class="text-center">APPLY NOW</h1>
 			<div class="mb-5 mb-xl-0 container">
-				<?php echo do_shortcode('[contact-form-7 id="14345" title="Career Form New"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="34" title="Career Form New"]'); ?>
 			</div>
 		</div> 
 	</div>

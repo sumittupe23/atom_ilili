@@ -30,6 +30,11 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
+.atm-sticky .navbar-brand > img {
+    -webkit-transition: 0.5s ease-in-out 0;
+    transition: 0.5s ease-in-out 0;
+}
+
 #sticky {
     transition: 0.5s;
 }
@@ -55,11 +60,15 @@
 .atm-nav {
     font-family: 'Raleway', serif;
     flex-grow: 0;
-    background: rgba(255,255,255,.8);
     text-transform: uppercase;
     line-height: 1;
     font-weight: 400;
-    font-size: .8rem;
+    font-size: .95rem;
+}
+
+.atm-nav ul li > a {
+    color: #fff;
+    margin-right: 0.75rem;
 }
 
 .atm-nav a:hover {
@@ -143,6 +152,7 @@
 .atm-sticky-bot-nav .atm-icon {
     background-color: rgba(0,0,0,1);
     border-radius: 50%;
+    -ms-transition: all .5s ease-in-out 0s;
     -webkit-transition: all .5s ease-in-out 0s;
     transition: all .5s ease-in-out 0s;
 }
@@ -179,21 +189,25 @@
     word-wrap: break-word;
 }
 
+.atm-bottom-nav .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .atm-bottom-nav-social, .atm-bottom-nav-news {
     text-align: left;
 }
 
 .atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
-    font-family: 'Alice', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 1rem;
 }
 
 .atm-bottom-nav-address > h3 {
     font-size: 2rem;
-    text-transform: none;
     text-align: left;
 }
 
@@ -222,6 +236,32 @@
 .atm-bottom-nav-copy span {
     font-size: 1.25rem;
     line-height: 2;
+}
+
+.atm-bottom-nav-copy ul {
+    display: flex;
+    list-style: none;
+}
+
+.atm-bottom-nav-copy ul li {
+    display: block;
+    padding-right: 1rem;
+}
+
+.atm-bottom-nav-copy ul li a {
+    color: #fff;
+}
+
+.atm-bottom-nav-copy ul li:after {
+    font-family: 'FontAwesome';
+    content: "\f111";
+    font-size: .5rem;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.atm-bottom-nav-copy ul li:last-child:after {
+    content: "";
 }
 
 .atm-btn-brand-alt {
@@ -457,9 +497,10 @@
 
 /* Error spotting for the page */
 
-.error-template {padding: 40px 15px;text-align: center;}
+.error-template {color: #fff; padding: 40px 15px;text-align: center;}
+.error-template h2 {color: #fff;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
-.error-actions .btn { margin-right:10px; }
+.error-actions .btn {color: #fff; margin-right:10px; }
 
 .atm-updates {
     width: 80%;
@@ -478,6 +519,8 @@
 .atm-updates hr {
     border: 1px solid #080808;
 }
+
+/* Latest Posts */
 
 .atm-card {
     background: transparent;
@@ -515,11 +558,52 @@
 }
 
 .atm-card-body h6 {
-    font-family: 'Alice', serif;
+    font-family: 'Cinzel', serif;
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
-    text-decoration: underline;
+}
+
+.atm-latest h3 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.atm-latest-post .row {
+    overflow: hidden;
+}
+
+.atm-latest-post .row img {
+    -ms-transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    -webkit-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+.atm-latest-post:hover .row > img {
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.atm-latest-post h3 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 100;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.atm-latest-post h6 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: currentColor;
 }
 
 .atm-restro-count {
@@ -914,6 +998,11 @@ div.accordion .card .card-header > a.collapsed::after{
     cursor: pointer;
 }
 
+#atm_modal_img:hover {
+    /* Create the box shadow at expanded size. */
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
 /* People page modal design */
 
 .atm-modal-content {
@@ -1141,4 +1230,8 @@ input[type=radio]:checked ~ .check::before{
     box-shadow:0px 0px 2px 2px #2980b9;
     -webkit-animation:active 2s infinite linear;
     animation:active 2s infinite linear;
+}
+
+body.page-id-14581 aside.main, body.page-id-14581 header.main {
+    display: none;
 }

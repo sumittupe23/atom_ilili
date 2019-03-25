@@ -57,7 +57,7 @@ get_header();
             <h3>Being the brainchild of Master Chef Sanjeev Kapoor, it is quite obvious that SK Restaurants stands for and delivers the best – be it food, ambience, hospitality, etc. So, it goes without saying that each of our brands is designed according to the segment they fall under with utmost perfection and finesse. The best of interiors, state-of-art kitchens with latest technologies, freshest of ingredients and highest standards in service are pretty much the hallmark of each chain.</h3>
         </div>
     </div>
-    <?php echo do_shortcode("[atm_tools id='14546' /]"); ?>
+    <?php echo do_shortcode("[atm_tools id='85' /]"); ?>
 </section>
 
 <!-- the world on a plate -->

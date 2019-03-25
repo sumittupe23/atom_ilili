@@ -7,17 +7,17 @@ str_pad('', 4096, "\n"); // send 4kb of new line to browser, just make sure that
 // if you have output compression, make sure your data will reach >4KB.
 ?>
 <!-- Main Menu Bar -->
-<?php if ( is_404() == false ) : ?>
+<?php if ( is_404() == false || is_page( 14581 ) == false ) : ?>
 <nav class="navbar navbar-expand-lg">
 	<div id="sticky" class="container-fluid fixed-top px-5">
 	<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
 		<?php if ( !has_custom_logo() ) { ?>
-			<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/logo.png">
+			<img class="img-fluid" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/logo.png">
 		<?php } else { 
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 			?>
-			<img src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>">
+			<img class="img-fluid" src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>">
 		<?php } ?>
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,19 +40,30 @@ str_pad('', 4096, "\n"); // send 4kb of new line to browser, just make sure that
 		        $link = $item->url;
 		        $title = $item->title;
 		        // item does not have a parent so menu_item_parent equals 0 (false)
-		        if ( !$item->menu_item_parent && $link != "http://localhost/wordpress/reservations/" ):
+		        if ( !$item->menu_item_parent && $link != "https://skrestaurants.com/staging/reservations/" ):
 		        // save this id for later comparison with sub-menu items
 		        $parent_id = $item->ID;
 		    ?>
       		<li class="nav-item">
 				<a class="nav-link" href="<?php echo $link; ?>" title="<?php echo get_bloginfo( 'name' ); ?>"><?php echo $title; ?></a></li>
 				
-				<?php elseif( $link == "http://localhost/wordpress/reservations/" ) : ?>
+				<?php elseif( $link == "https://skrestaurants.com/staging/reservations/" ) : ?>
 					<a href="<?php echo $link; ?>"><button type="submit" class="atm-btn atm-btn-brand"><?php echo $title; ?></button></a>
 				<?php endif; ?>	
 				
 					<!-- Nested Menus not working -->
 		<?php $count++; endforeach; ?>
+			<!-- <li class="nav-item">
+				<a class="nav-link" target="_blank" href="https://www.facebook.com/login.php?next=https://skrestaurants.com/staging%2Fsharer.php&display=popup"><i class="fa fa-share-alt"></i></a>
+			</li> -->
+			
+			<?php if ( is_active_sidebar( 'atm_social_share_top_menu' ) ) :
+              	dynamic_sidebar( 'atm_social_share_top_menu' );
+             endif; ?>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+			</li>
       	</ul>
     </div>
   </div>

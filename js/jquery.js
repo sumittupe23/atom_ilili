@@ -1,18 +1,26 @@
 $(document).ready(function() {
 
+// Add class to wp_post_image class
+$(".wp-post-image").addClass("img-fluid");
+
 var atm_btn = $('#atm-btn-back-to-top');
 var res_href = window.location;
 
-if ( res_href != "http://localhost/wordpress/" ) {
+if ( res_href != "https://skrestaurants.com/staging/" ) {
 	$('#sticky').addClass('atm-sticky');
 }
-
 	$(window).scroll(function() {
 
-		if ( $(this).scrollTop() > 0 || res_href != "http://localhost/wordpress/" ) {
+		if ( $(this).scrollTop() > 0 || res_href != "https://skrestaurants.com/staging/" ) {
 			$('#sticky').addClass('atm-sticky');
+			$('#sticky .navbar-brand > img').addClass('atm-sticky-logo');
+			$("#sticky .atm-nav ul li > a").css("color", "#000");
+			$("#sticky .atm-nav ul li div > a").css("color", "#000");
 		} else {
 			$('#sticky').removeClass('atm-sticky');
+			$('#sticky .navbar-brand > img').removeClass('atm-sticky-logo');
+			$("#sticky .atm-nav ul li > a").css("color", "#fff");
+			$("#sticky .atm-nav ul li div > a").css("color", "#fff");
 		}
 
 		if ( $(window).scrollTop() > 300 ) {

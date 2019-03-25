@@ -431,10 +431,10 @@ get_header();
 			</div>
 		</div>
 		
-		<div class="col-md-6 p-5" style="background-color: rgba(255,255,255,1); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);">
+		<div class="mb-5 mb-xl-0 col-10 col-lg-6 p-3 p-lg-5" style="background-color: rgba(255,255,255,1); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32);">
 		<h1 class="text-center">CONNECT WITH US!</h1>
 			<div class="container">
-				<?php echo do_shortcode('[contact-form-7 id="14340" title="Franchise Form New"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="31" title="Franchise Form New"]'); ?>
 			</div>
 		</div> 
 	</div>

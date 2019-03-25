@@ -1,4 +1,4 @@
-<?php echo do_shortcode( "[atm_slider id='14328' /]" ); ?>
+<?php echo do_shortcode( "[atm_slider id='8' /]" ); ?>
 
 <!-- About Section -->
 
@@ -52,11 +52,11 @@
 			<div class="atm-c-split__content atm-content">
 				<h2 class="h2 atm-c-split__heading">Pursuit of Perfection</h2>
 				<p>Multiple successful ventures have not kept Master Chef Sanjeev Kapoor away from indulging in his passion as a creator of culinary works of art. With a plethora of restaurants serving innovative and exciting Indian cuisine as well as other popular cuisines from the world, both in India and abroad, SK Restaurants aims to take the vision of Master Chef Sanjeev Kapoor to new heights.</p>
-				<?php echo do_shortcode("[slide-anything id='13505']"); ?>
+				<?php echo do_shortcode("[slide-anything id='44']"); ?>
 				<a href="https://skrestaurants.com/staging/brands/" class="atm-c-btn atm-c-btn-brand-alt">Know More</a>
 			</div>
 		</div>
-	</div>		
+	</div>
 
 	<div class="atm-c-split__col atm-c-split__col--empty">
 		<div class="atm-c-split__col-inner">
@@ -72,7 +72,7 @@
 		</div>
 		<div class="mt-5 row justify-content-center">
 			<?php
-			query_posts('cat=1');
+			query_posts(array('cat'=>7, 'order'=>'DSC', 'posts_per_page'=>6));
 				if (have_posts()) :
 					while (have_posts()) :
 						the_post();
@@ -80,7 +80,6 @@
 			<div id="post-<?php the_ID(); ?>" class="col-md-5 col-lg-4">
 				<div class="card atm-card">	
 					<div class="atm-img-top">
-					  	<!-- <img class="card-img-top img-fluid" alt="<?php the_title(); ?>" src="<?php the_post_thumbnail(); ?>"> -->
 					  	<?php the_post_thumbnail(); ?>
 				  	</div>
 					<div class="atm-card-body card-body text-center">
@@ -96,5 +95,4 @@
 			?>
 		</div>
 	</div>
-	
 </section>
