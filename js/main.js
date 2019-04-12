@@ -1,8 +1,33 @@
+// Mobile main navigation menu
+function openNav() {
+  document.getElementById("atmMobNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("atmMobNav").style.height = "0%";
+}
+
+// Add video inside the post
+
+$('#post-470 .card .card-body .row .atm-img a').append('<iframe src="https://www.youtube.com/embed/CvTRvZdpB_I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="308" height="305" frameborder="0"></iframe>');
 
 // Navigation Bar Collapse
 $(".navbar-toggler").click(function(event) {
     $(".navbar-collapse").toggle('in');
 });
+
+// Accordion careers openings collapse
+$.each([ 676, 678, 680, 683, 685, 687, 689, 691, 693, 701, 704, 707, 710, 713, 716, 719, 722, 725, 728 ], function( index, value ) {
+	var heading = "#heading" + value;
+	var collapse = "#collapse" + value;
+	$(heading).click(function(event){
+		$(collapse).toggle('hide');
+		$(heading + " a span:last-child").toggleClass('atm-plus atm-minus');
+	});
+});
+
+// Accordian partner support collapse
+
 
 // Image Gallery
 baguetteBox.run('.tz-gallery', {
@@ -11,36 +36,3 @@ baguetteBox.run('.tz-gallery', {
         return element.getElementsByTagName('img')[0].alt;
     }
 });
-
-// People's page modal
-$('*').on('click', function(ev){
-	$( '#modal_main' ).on('click', function(even){ even.stopPropagation(); });
-
-	var modal_img_id = this.id
-	var mod_id = $( this ).parent().parent().parent().attr('id');
-
-	var modal_id = '#' + mod_id;
-	console.log(modal_id);
-
-	$( modal_id ).on("click", function(e){
-
-		var modal_img = $( modal_id ).find( '#atm_modal_img' ).attr("src");
-		var modal_name = $( modal_id ).find( '#atm_modal_name' ).text();
-		var modal_post = $( modal_id ).find( '#atm_modal_post' ).text();
-		var modal_body = $( modal_id ).find( '#atm_modal_body' ).text();
-		var modal_fb_link = $( modal_id ).find( '#atm_modal_fb_link' ).text();
-		var modal_tw_link = $( modal_id ).find( '#atm_modal_tw_link' ).text();
-		var modal_in_link = $( modal_id ).find( '#atm_modal_in_link' ).text();
-
-		$( '#atm-modal-image' ).attr( "src", modal_img );
-		$( '#atm-modal-name' ).text( modal_name );
-		$( '#atm-modal-post' ).text( modal_post );
-		$( '#atm-modal-body' ).text( modal_body );
-		$( '#atm-modal-fb' ).attr( "href", "https://" + modal_fb_link );
-		$( '#atm-modal-tw' ).attr( "href", "https://" + modal_tw_link );
-		$( '#atm-modal-in' ).attr( "href", "https://" + modal_in_link );
-
-	});
-
-});
-

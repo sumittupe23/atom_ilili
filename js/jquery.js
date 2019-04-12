@@ -1,26 +1,40 @@
 $(document).ready(function() {
 
-// Add class to wp_post_image class
-$(".wp-post-image").addClass("img-fluid");
-
 var atm_btn = $('#atm-btn-back-to-top');
 var res_href = window.location;
+
+$('#atombord *').css("border", "1px solid #000");
+
+$('#atm-blog-sec .row .atm-blog-img a > img').addClass('img-fluid');
+$('#atm-team-test div div div div div a > img').addClass('img-fluid');
+$('#atm-blog-sec .row div .atm-blog-content .addtoany_share_save_container').css("display", "none");
+$('#atm-team-testim .addtoany_share_save_container').css("display", "none");
+
+$('#ajaxsearchlite1').hover(function(){
+	$('#ajaxsearchlite1 .probox .proinput').fadeToggle(500);
+});
 
 if ( res_href != "https://skrestaurants.com/staging/" ) {
 	$('#sticky').addClass('atm-sticky');
 }
 	$(window).scroll(function() {
 
-		if ( $(this).scrollTop() > 0 || res_href != "https://skrestaurants.com/staging/" ) {
+		if ( $(this).scrollTop() > 0 || res_href != "https://skrestaurants.com/staging/" || $(window).width() <= 576 ) {
 			$('#sticky').addClass('atm-sticky');
 			$('#sticky .navbar-brand > img').addClass('atm-sticky-logo');
 			$("#sticky .atm-nav ul li > a").css("color", "#000");
 			$("#sticky .atm-nav ul li div > a").css("color", "#000");
+			$("div.asl_w .probox .promagnifier .innericon svg").css("fill", "#000");
+			$("#ajaxsearchlite1 .probox .proinput, div.asl_w .probox .proinput").css("border-bottom", "1px solid #000");
+			$("#atm-sch").css("display", "block");
 		} else {
 			$('#sticky').removeClass('atm-sticky');
 			$('#sticky .navbar-brand > img').removeClass('atm-sticky-logo');
 			$("#sticky .atm-nav ul li > a").css("color", "#fff");
 			$("#sticky .atm-nav ul li div > a").css("color", "#fff");
+			$("div.asl_w .probox .promagnifier .innericon svg").css("fill", "#fff");
+			$("#ajaxsearchlite1 .probox .proinput, div.asl_w .probox .proinput").css("border-bottom", "1px solid #fff");
+			$("#atm-sch").css("display", "none");
 		}
 
 		if ( $(window).scrollTop() > 300 ) {

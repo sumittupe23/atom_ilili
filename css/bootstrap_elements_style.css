@@ -9,7 +9,7 @@ nav .fixed-top {
 }
 
 .carousel-inner {
-	max-height: 680px;
+	max-height: 980px;
 }
 
 .carousel-caption {
@@ -30,10 +30,6 @@ nav .fixed-top {
 }
 
 /* Newsletter Contact Form Design */
-
-div.wpcf7 {
-
-}
 
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     border: medium none;
@@ -84,14 +80,20 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	text-align:center;
 	text-transform:uppercase;
 	border-radius: 0;
+	letter-spacing: 2px;
+	font-size: .85rem;
 }
 
 .wpcf7 input[type="submit"]:hover,
 .wpcf7 input[type="button"]:hover {
     border: 1px outline #e3e3e3;
-    color: #000;
+    /*color: #000;*/
 }
 
 .post-navigation > h2 {
 	display: none;
+}
+
+.card {
+	border: none;
 }

@@ -6,28 +6,15 @@
   
  get_header();
 ?>
-<div class="container pt-5 mt-5">
+<div class="container pt-5 mt-5 revealable">
 	<div class="row justify-content-center">
-		<?php if ( have_posts() ) : the_post(); ?>
-		<div class="col-md-10 text-center m-5">
-			<h1><?php the_title(); ?></h1>
-			<?php the_content(); ?>
-			<!-- <img class="img-fluid" src=<?php //get_the_post_thumbnail_url(); ?>> -->
-		</div>
-	</div>
-	<div class="row justify-content-center">
-		<div class="col-md-10 m-5">
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-				the_post_navigation( array(
-					'prev_text' => '<div class="row justify-content-start"><div class="col-md-3"><span title="%title" class="atm-btn atm-btn-brand">' . __( 'Previous Post', 'atom' ) . '</span></div></div>',
-					'next_text' => '<div class="row justify-content-end"><div class="col-md-3"><span title="%title" class="atm-btn atm-btn-brand">' . __( 'Next Post', 'atom' ) . '</span></div></div>',
-				) );
-			?>
+		<?php
+		 if ( have_posts() ) : the_post(); ?>
+		<div class="col-md-10 m-md-5">
+			<h1 class="atm-h1"><?php the_title(); ?></h1>
+			<div class="p-3 p-md-5">
+				<?php the_content(); ?>
+			</div>
 		</div>
 	</div>
 </div>

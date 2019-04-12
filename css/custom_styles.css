@@ -27,7 +27,7 @@
 .atm-sticky {
     background-color: #fff;
     top: 0px !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
 }
 
 .atm-sticky .navbar-brand > img {
@@ -165,7 +165,7 @@
     padding: .5rem .15rem .4rem .6rem;
 }
 
-.atm-sticky-bot-nav .in {
+.atm-sticky-bot-nav .in, .atm-sticky-bot-nav .li {
     padding: .5rem .25rem .45rem .7rem;
 }
 
@@ -173,12 +173,31 @@
     background-color: rgba(255,255,255,0.7);
 }
 
-.in:hover > .fa-instagram, .tw:hover > .fa-twitter, .fb:hover > .fa-facebook {
+.in:hover > .fa-instagram, .tw:hover > .fa-twitter, .fb:hover > .fa-facebook, .li:hover > .fa-linkedin {
     color: #000;
 }
 
 .atm-sticky-bottom {
     bottom: 56px;
+}
+
+.atm-bottom-d-nav {
+    width: 100%;
+    color: #fff;
+    background-color: #0d0d0d;
+}
+
+.atm-bottom-d-nav h1 {
+    font-family: 'Alice', sans-serif;
+    text-transform: capitalize;
+    font-size: 2.75rem;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.atm-bottom-d-nav i {
+    color: rgb(192, 150, 61);
+    line-height: 2;
 }
 
 .atm-bottom-nav {
@@ -194,30 +213,26 @@
     margin-left: 0px;
 }
 
-.atm-bottom-nav-social, .atm-bottom-nav-news {
-    text-align: left;
-}
-
-.atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3 {
-    font-family: 'Cinzel', serif;
+.atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3, .atm-bottom-nav-copy > h3 {
+    font-family: 'Alice', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding-bottom: 1rem;
 }
 
-.atm-bottom-nav-address > h3 {
-    font-size: 2rem;
-    text-align: left;
+.atm-bottom-nav-address p {
+    font-size: 0.85rem;
 }
 
-.atm-about-section-top {
-    text-align: justify;
+.atm-bottom-nav-address > h3 {
+    font-size: 2.5rem;
+    text-align: left;
 }
 
 .atm-about-section-top h3 {
     font-family: 'Alice', serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .atm-bottom-nav-copy {
@@ -238,28 +253,6 @@
     line-height: 2;
 }
 
-.atm-bottom-nav-copy ul {
-    display: flex;
-    list-style: none;
-}
-
-.atm-bottom-nav-copy ul li {
-    display: block;
-    padding-right: 1rem;
-}
-
-.atm-bottom-nav-copy ul li a {
-    color: #fff;
-}
-
-.atm-bottom-nav-copy ul li:after {
-    font-family: 'FontAwesome';
-    content: "\f111";
-    font-size: .5rem;
-    padding-left: 1rem;
-    display: inline-block;
-}
-
 .atm-bottom-nav-copy ul li:last-child:after {
     content: "";
 }
@@ -274,7 +267,7 @@
 .atm-nl-email {
     border-bottom: 1px solid #fff !important;
     width: 100% !important;
-    line-height: 2 !important;
+    line-height: 2.3 !important;
     color: #fff !important;
 }
 
@@ -343,7 +336,6 @@
 }
 
 .atm-c-split {
-    margin: 6rem auto;
     display: table;
     table-layout: fixed;
     width: 100%;
@@ -372,7 +364,7 @@
 
 .atm-c-split__content {
     max-width: 80%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     padding: 3rem 3rem 2rem;
     box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
     border: 1px solid #f8f6f5;
@@ -384,9 +376,26 @@
     margin-right: auto;
 }
 
+.atm-pursuit-section {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 30px 30px 50px rgba(187,181,174,0.1);
+    padding: 3rem 0;
+}
+
+.atm-pursuit-section h2 {
+    font-size: 1.75rem;
+}
+
+.atm-pursuit-section h2, .atm-pursuit-section p {
+    margin-bottom: 2rem;
+}
+
 .atm-c-split__content p {
-    font-size: .95rem;
-    text-align: justify;
+    font-size: .85rem;
 }
 
 .atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
@@ -503,9 +512,15 @@
 .error-actions .btn {color: #fff; margin-right:10px; }
 
 .atm-updates {
-    width: 80%;
     text-align: center;
     margin: 0 auto;
+}
+
+.atm-underline {
+    display:inline-block; 
+    padding-bottom: 1rem;
+    border-bottom: 0.075rem solid #000;
+    line-height: 2rem;
 }
 
 .atm-updates span {
@@ -530,6 +545,7 @@
 
 .atm-img-top {
     overflow: hidden;
+    background-color: rgba(211,211,211,0.3);
 }
 
 .atm-img-top img {
@@ -552,9 +568,10 @@
 }
 
 .atm-card-body h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .atm-card-body h6 {
@@ -562,6 +579,10 @@
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.atm-card-body h6 a {
+    color: #000;
 }
 
 .atm-latest h3 {
@@ -612,8 +633,14 @@
 
 .atm-restro-count h1 {
     font-family: 'open-sans', sans-serif;
-    font-size: 2.75rem;
-    font-weight: 400;
+    font-size: 3.25rem;
+    font-weight: 600;
+}
+
+.atm-pursuit-section .row .mt-5 p {
+    font-size: 0.85rem;
+    margin: 0 2rem;
+    text-align: justify;
 }
 
 .atm-restro-count h4 {
@@ -623,10 +650,6 @@
 }
 
 /* Lightbox Gallery CSS */
-
-.tz-gallery {
-    padding: 40px;
-}
 
 .tz-gallery .lightbox img {
     width: 100%;
@@ -708,12 +731,12 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background-color: #000;
+    background-color: #fcf8f4;
     margin: 0 8px;
 }
 
 .carousel-main .active {
-    background-color: #9d0e04;
+    background-color: #765e36;
 }
 
 /* Carousel Design for Careers page id="career_carousel" */
@@ -731,13 +754,16 @@
 }
 
 .atm-career-carousel-prev, .atm-career-carousel-next {
-    background-color: #000000;
     width: 26px;
     height: 48px;
     line-height: 48px;
     border: 2px solid transparent;
     margin: 1px;
     top: 38%;
+}
+
+.atm-career-carousel-prev i, .atm-career-carousel-next i {
+    color: #765e36;
 }
 
 /* Another Carousel Design with id="about_carousel" */
@@ -832,7 +858,7 @@
 .input_field_fr {
     background-color: transparent;
     font-family: 'open-sans', sans-serif;
-    border: 0.5px solid #000;
+    border: 0.5px solid #999;
     padding: 0.5rem;
     margin: 0.5rem;
     font-weight: 200;
@@ -951,8 +977,9 @@
     font-family: 'Alice', serif;
     display: block;
     padding: 0 0 5px 0;
-    font-size: 1rem;
+    font-size: 1rem !important;
     letter-spacing: 0.15rem;
+    text-align: center !important;
     text-transform: uppercase;
     font-weight: 400;
     color: #000;
@@ -961,41 +988,52 @@
 .atm-key-post {
     font-family: 'Raleway', serif;
     display: block;
+    text-align: center !important;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.85rem !important;
     color: rgba(0,0,0,0.6);
 }
 
 .atm-accord-card {
     background-color: transparent;
-    border: 0;
 }
 
 .atm-accord-card .card-header {
     background-color: transparent;
-    border-bottom: 2px solid #e2e2e2;
 }
 
 /* Accordian Icon Toggle */
 
-div.accordion .card .card-header > a::after {
-    font-family: "FontAwesome";
-    content: "\f068";
-    float: right;
-    font-size: x-small;
-    line-height: 3;
-}
-
-div.accordion .card .card-header > a.collapsed::after{
+.atm-plus::after {
     font-family: "FontAwesome";
     content: "\f067";
     float: right;
-    font-size: x-small;
-    line-height: 3;
+    font-size: 0.5rem;
+    line-height: 4;
+    color: #343a40;
+    padding-bottom: 5px;
 }
 
-.image-modal {
+.atm-minus::after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    float: right;
+    font-size: 0.5rem;
+    line-height: 4;
+    color: #343a40;
+    padding-bottom: 5px;
+}
+
+/*.image-modal {
     cursor: pointer;
+}*/
+
+.center_in_parent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #atm_modal_img:hover {
@@ -1019,15 +1057,15 @@ div.accordion .card .card-header > a.collapsed::after{
 }
 
 .atm-modal-icon-holder.fb {
-    padding: .2rem .3rem .2rem .5rem;
+    padding: .5rem .4rem .28rem .6rem;
 }
 
 .atm-modal-icon-holder.tw {
-    padding: .2rem .15rem .2rem .45rem;
+    padding: .5rem .25rem .28rem .45rem;
 }
 
 .atm-modal-icon-holder.in {
-    padding: .2rem .35rem .2rem .45rem;
+    padding: .5rem .35rem .28rem .5rem;
 }
 
 .atm-modal-icon-holder:hover {
@@ -1234,4 +1272,39 @@ input[type=radio]:checked ~ .check::before{
 
 body.page-id-14581 aside.main, body.page-id-14581 header.main {
     display: none;
+}
+
+/* Blog Page Design */
+
+.atm-blog-sect h6, .atm-blog-sect h3, .atm-blog-sect p, .atm-blog-sect span {
+    font-family: 'Raleway', sans-serif;
+}
+
+.atm-blog-sect span {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Team testimonial design */
+
+.atm-team-testim div > .card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: unset;
+}
+
+.atm-team-testim div > .card h4, .atm-team-testim div > .card h6, .atm-team-testim div > .card p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.atm-team-testim div > .card h4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.atm-team-testim div > .card h6 {
+    font-size: 0.8rem;
+}
+
+.atm-team-testim div > .card p {
+    font-size: 0.9rem;
 }

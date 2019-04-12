@@ -5,7 +5,7 @@
 * Width Above / From / Min
 **/
 
-/* Between 786px to 992px */
+/* Between 250px to 786px */
 @media screen and (max-width: 786px) and (min-width: 250px) {
 	.atm-c-split__col, .atm-c-split--vcenter .atm-c-split__col {
 		height: 25vh;
@@ -21,6 +21,17 @@
 	}
 	.atm-c-split__col {
 		padding: 0;
+	}
+	.atm-bottom-nav-copy ul {
+		display: block;
+	}
+	.atm-bottom-nav-copy ul li:after {
+		display: none;
+	}
+	.atm-sticky {
+	    background-color: #fff;
+	    top: 0px !important;
+	    box-shadow: 0 0 2px rgba(0,0,0,0.15);
 	}
 }
 
@@ -40,6 +51,12 @@
     }
     .atm-about-carousel-indicator {
 	    top: 75px;
+	}
+	.atm-bottom-nav-copy ul {
+		display: block;
+	}
+	.atm-bottom-nav-copy ul li:after {
+		display: none;
 	}
 }
 
@@ -68,6 +85,9 @@
 	.atm-header {
 		padding: 80px 0 0 0;
 	}
+	.atm-ppl-header {
+		padding: 110px 0 0 0;
+	}
 	.atm-banner-header {
 		height: 210px;
 		position: relative;
@@ -87,7 +107,8 @@
 		font-size: 1.5rem;
 	}
 	.atm-updates h2 {
-		font-size: 1.5rem;line-height: 2;border-bottom: 1px solid #000;
+		font-size: 1.5rem;
+		
 	}
 	.atm-card-body h3 {
 		font-size: 1rem;
@@ -109,11 +130,14 @@
 	.atm-header {
 		padding: 80px 0 0 0;
 	}
+	.atm-ppl-header {
+		padding: 110px 0 0 0;
+	}
 	.atm-banner-header {
-		height: 420px;
+		height: 485px;
 	}
 	.atm-updates h2 {
-		font-size: 2rem;line-height: 2;border-bottom: 1px solid #000;
+		font-size: 1.75rem;
 	}
 	.atm-tool-gallery-image {
 		width: 325px;
@@ -121,8 +145,106 @@
 	}
 }
 
-/* Screen Below 476px */
-@media only screen and ( max-width: 476px ) {
+/* Screen Above 576px */
+@media only screen and ( min-width: 576px ) {	
+
+	.atm-about-section-top, .atm-c-split__content p, .atm-pursuit-section div div p {
+	    text-align: justify;
+	}
+	.tz-gallery {
+	    padding: 58px;
+	}
+	#modal-ready h6 {
+	    font-family: 'Raleway', sans-serif;
+	    font-size: 1.35rem;
+	    font-weight: 500;
+	    line-height: 2;
+	    letter-spacing: 2px;
+	    padding-top: 5px;
+	}
+	#modal-ready span {
+	    font-size: 1rem;
+		line-height: 1;
+		letter-spacing: 1.25px;
+		text-align: justify;
+	}
+	.atm-h1 {
+		text-align: center;
+		font-size: 1.75rem;
+		line-height: 1;
+		letter-spacing: 2px;
+		font-weight: 600;
+	}
+	.atm-c-split-mob-image {
+		display: none;
+	}
+	.atm-c-split {
+		margin: 6rem auto;
+	}
+	/*.atm-about-section-top h3 {
+		margin: 0 5rem;
+	}*/
+	.atm-d-hide {
+		display: none;
+	}
+	#icon_wrapper {
+		display: none;
+	}
+	.atm-nl-form div div span .wpcf7-text {
+	    font-family: 'open-sans', sans-serif;
+	    background-color: #000 !important;
+	    color: #89817e !important;
+	    border-bottom: none !important;
+	    padding: 0.08rem 1.25rem !important;
+	}
+	.atm-bottom-nav-social, .atm-bottom-nav-news, .atm-bottom-nav-copy {
+	    text-align: center;
+	}
+	.atm-bottom-nav-address > h3, .atm-bottom-nav-social > h3, .atm-bottom-nav-news > h3, .atm-bottom-nav-copy > h3 {
+		font-size: 1.5rem;
+	}
+	/* footer brands */
+	.atm-bottom-nav-copy ul {
+	    display: flex;
+	    list-style: none;
+	}
+	.atm-bottom-nav-copy ul li a {
+	    color: #fff;
+	    font-size: .85rem;
+	}
+	.atm-bottom-nav-copy ul li a:hover {
+		color: rgb(192, 150, 61);
+	}
+	.atm-bottom-nav-copy ul li:after {
+	    font-family: 'FontAwesome';
+		content: "\f111";
+		font-size: .35rem;
+		padding: 1rem;
+		color: rgb(192, 150, 61);
+		position: relative;
+		bottom: 2px;
+	}
+	.atm-bottom-d-nav span {
+		font-size: 0.85rem;
+	}
+	.atm-md-footer a:hover {
+	    color: #000;
+	}
+
+}
+
+/* Screen Below 576px */
+@media only screen and ( max-width: 576px ) {
+
+	/* Navigation menu on mobile */
+	.atm-overlay {overflow-y: auto;}
+	.atm-overlay a {font-size: 1rem}
+	.atm-overlay .atmnavmobclosebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+  	}
+
 	.atm-md-footer {
 		display: block;
 		text-align: center;
@@ -130,6 +252,9 @@
 	}
 	.atm-md-footer > span {
 		display: block;
+	}
+	.atm-ppl-header {
+		padding: 83px 0 0 0;
 	}
 	.atm-banner-header {
 		height: 150px;
@@ -142,9 +267,61 @@
 	    transition: 0.5s ease-in-out 0;
 	    width: 50px;
 	}
-}
+	#myCarousel {
+		padding-top: 80px;
+	}
+	.card-img-overlay {
+		position: relative;
+	}
+	.atm-about-section-top, .atm-c-split__content p, .atm-pursuit-section div div p {
+		text-align: center !important;
+	}
+	.tz-gallery {
+		padding: 0px;
+	}
+	#modal-ready h6 {
+	    font-family: 'Raleway', sans-serif;
+	    font-size: 0.95rem;
+	    font-weight: 500;
+	    line-height: 2;
+	    letter-spacing: 1px;
+	    padding-top: 3px;
+	}
+	#modal-ready span {
+	    font-size: 0.85rem;
+		line-height: 1;
+		letter-spacing: 1.25px;
+		text-align: left;
+	}
+	.atm-h1 {
+		text-align: center;
+		font-size: 1.25rem;
+		line-height: 2;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+	.atm-c-split-mob-image {
+		display: block;
+	}
+	.atm-c-split {
+		margin: 1rem auto 3rem auto;
+	}
+	.atm-m-hide {
+		display: none;
+	}
+	#sticky-bottom {
+		display: none;
+	}
+	.atm-bottom-nav-social, .atm-bottom-nav-news {
+	    text-align: left;
+	}
+	/* footer brands */
+	.atm-bottom-nav-copy ul li {
+	    display: block;
+	}
 
-/* Screen Above 476px */
-@media only screen and ( min-width: 476px ) {
-	
+	.atm-bottom-nav-copy ul li a:hover {
+	    color: rgb(192, 152, 61);
+	}
+
 }

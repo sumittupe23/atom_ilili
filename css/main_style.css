@@ -20,8 +20,8 @@ body {
 	margin: 0;
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-family: 'Alice', sans-serif;
+    font-size: 0.85rem;
     line-height: 1.25;
     color: rgba(0,0,0,0.9);
     background-color: #fcf8f4; 
@@ -39,7 +39,7 @@ h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@ h3, .h3 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .h2 {
@@ -84,23 +84,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
 }
 
-nav {
-  z-index: 1000;
-}
-
 p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 a {
-    color: #000;
+    color: #fff;
 	transition: color .2s ease-in-out 0s;
 	background-color: transparent;
 }
 
 a:hover {
-    color: #000;
+    color: rgb(192, 152, 61);
     text-decoration: none;
 }
 
@@ -133,4 +129,55 @@ img {
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
+}
+
+/* Mobile Navigation Menu */
+
+.atm-overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.atm-overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.atm-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.atm-overlay a:nth-of-type(6), .atm-overlay a:nth-of-type(10) {
+  display: none;
+}
+
+.atm-overlay a:nth-of-type(11), .atm-overlay a:nth-of-type(12), .atm-overlay a:nth-of-type(13), .atm-overlay a:nth-of-type(14) {
+  display: inline-flex;
+}
+
+.atm-overlay a:hover, .atm-overlay a:focus {
+  color: #000;
+}
+
+.atm-overlay .atmnavmobclosebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 1.75rem !important;
 }

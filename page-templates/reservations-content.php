@@ -7,7 +7,7 @@ get_header();
 
 <!-- Reservations Container -->
 
-<div class="atm-reserve container-fluid revealable atm-reserve-header" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/reservationsfoodpicture.jpg');">
+<div class="atm-reserve container-fluid revealable atm-reserve-header atm-m-hide" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/reservationsfoodpicture.jpg');">
     <div class="row">
         <div class="col-sm-10 offset-sm-2 offset-md-7 col-md-5 text-justify">
             <h1>Reservations</h1>
